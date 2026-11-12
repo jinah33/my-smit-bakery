@@ -110,3 +110,4 @@
 | 2026-11-12 | reward.py 분리 및 보상 v1 명세화 | 성공 척도를 직접 반영한 기본 보상 함수 모듈화 및 신경망 학습 안정화 | reward.py 생성, compute_reward_v1 구현(10만 원당 1.0 스케일링, 가정), env.py 연동, 4절 설계 카드 및 5절에 v1 보상 공식과 이유 기록 |
 | 2026-11-12 | 4절 알고리즘(PPO) 및 GPU(CUDA) 확정 | 3차원 연속 제어 안정성 및 고성능 GPU(RTX 3090 Ti) 가속 활용 | 4절 설계 카드에 PPO 알고리즘 및 CUDA GPU 장치 선정 이유 기록 |
 | 2026-11-12 | v1 정책 39회 시뮬레이션 평가 및 run.py 메뉴 구축 | 환경 타당성 검증 조건과 동일한 v1 평가 및 통합 실행 환경 구축 | simulate.py에 rl_v1 정책 평가 추가, results/summary_v1.md 비교 보고서 작성, run.py 5개 통합 메뉴 구축 및 run_execution_history.csv 자동 누적 연동 |
+| 2026-11-12 | Vercel 배포 설정 파일(vercel.json) 추가 | 브라우저에서 매장 재생 화면을 인터넷에 무료 호스팅 | vercel.json(outputDirectory: public) 생성 후 GitHub 푸시 연동 완료 |
