@@ -1,0 +1,2 @@
+﻿timestamp,action_type,model_version,steps_or_episodes,result_metric,evaluation
+2026-11-12 17:33:22,시험 학습 (PPO),v1,"2,800 스텝 (100 에피소드)",소요시간 18.8초 (약 148.6 SPS),"1분 안쪽 시험 학습 정상 완료, 경험 샘플(1,000스텝) 및 모델 저장"
