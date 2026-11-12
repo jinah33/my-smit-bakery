@@ -62,32 +62,25 @@ uv sync
 
 ## 🚀 3. 실행 방법
 
-모든 스크립트는 가상환경 활성화 후 실행하거나 `uv run <스크립트>`로 바로 실행할 수 있습니다.
+모든 기능은 통합 관리 메뉴 스크립트인 **`run.py`**를 통해 한곳에서 편리하게 실행할 수 있습니다:
 
-### 1) 시뮬레이션 및 규칙 검증 (simulate)
-4가지 운영 규칙(아무것도 안 함, 매일 최대로 행동, 무작위 행동, 사장님 노하우)을 13개 에피소드(28일)에 걸쳐 평가하고 결과를 요약합니다.
 ```powershell
-uv run python simulate.py
+uv run python run.py
 ```
-- 결과 로그: `results/logs/` (규칙별 CSV 로그)
-- 검증 보고서: `results/sanity_check.md`
-- 전후 비교 히스토리: `run_history.csv`
 
-### 2) 매장 재생 화면 시청 (Web UI)
-로컬 웹 서버를 실행하여 브라우저에서 매장 운영 모습을 시각적으로 재생합니다.
-```powershell
-# 로컬 웹 서버 실행 (public 디렉터리 기준)
-uv run python -m http.server 8000 --directory public
-```
-- 브라우저 접속: `http://localhost:8000`
-- 기능: 4가지 규칙별 매장 비교, 날짜 이동(1~28일 슬롯), 배속 조절(1x~60x), 고객 말풍선 및 반응 관찰
+### run.py 통합 메뉴 구성
+- **[1] 시험 학습**: 1분 안쪽 PPO 2,800 스텝 빠른 검증 학습 (`uv run python train.py --test`)
+- **[2] 본 학습**: 10분 안쪽 PPO 100,000 스텝 전체 학습 (`uv run python train.py --steps 100000`)
+- **[3] 평가 시뮬레이션**: 4대 시험 규칙 + AI 정책 39회 다회차 평가 (`uv run python simulate.py`)
+- **[4] 매장 재생 화면 웹 서버**: 웹 브라우저(`http://localhost:8000`) 재생 서버 실행
+- **[0] 종료**
 
-### 3) 재생 화면 스크린샷 캡처
-헤드리스 브라우저로 재생 화면을 캡처하여 검증 이미지를 저장합니다.
-```powershell
-uv run python scripts/capture_screenshot.py
-```
-- 캡처 이미지: `results/screenshots/playback_screen.png`
+> **개별 직접 실행 명령**:
+> - 평가 시뮬레이션: `uv run python simulate.py`
+> - 시험 학습: `uv run python train.py --test`
+> - 본 학습: `uv run python train.py --steps 100000`
+> - 웹 화면 시청: `uv run python -m http.server 8000 --directory public`
+> - 스크린샷 캡처: `uv run python scripts/capture_screenshot.py`
 
 ---
 
