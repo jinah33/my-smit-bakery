@@ -312,6 +312,18 @@ def export_playback_json(env):
     print(f"-> personas.json 저장 완료: {personas_file} (총 {len(personas_summary)}명)")
 
     # 2. playback.json 내보내기 (정책별 대표 에피소드 상세)
+    pols_to_export = ["owner_heuristic", "rl_v1", "max_action", "random_action", "do_nothing"]
+    # rl_model 로드 확인
+    rl_model = None
+    model_path = os.path.join("results", "models", "v1.zip")
+    if os.path.exists(model_path):
+        try:
+            rl_model = PPO.load(model_path, env=env)
+        except Exception:
+            pols_to_export.remove("rl_v1")
+    else:
+        pols_to_export.remove("rl_v1")
+
     playback_data = {
         "metadata": {
             "store_name": config.STORE_NAME,
@@ -319,7 +331,7 @@ def export_playback_json(env):
             "location": config.LOCATION,
             "business_hours": config.BUSINESS_HOURS,
             "episode_days": config.EPISODE_DAYS,
-            "policies": ["owner_heuristic", "max_action", "random_action", "do_nothing"]
+            "policies": pols_to_export
         },
         "episodes": {}
     }
@@ -330,12 +342,12 @@ def export_playback_json(env):
 
     day_names = ["월", "화", "수", "목", "금", "토", "일"]
 
-    for pol in ["owner_heuristic", "max_action", "random_action", "do_nothing"]:
+    for pol in pols_to_export:
         obs, info = env.reset(seed=eval_seed, options={"start_date": eval_start})
         ep_days = []
 
         for step in range(config.EPISODE_DAYS):
-            action = get_action_for_policy(pol, obs, env)
+            action = get_action_for_policy(pol, obs, env, rl_model=rl_model)
             baked_sw = int(np.clip(round(action[0]), 0, config.ACTION_MAX["sandwich"]))
             baked_snack = int(np.clip(round(action[1]), 0, config.ACTION_MAX["snack_bread"]))
             baked_loaf = int(np.clip(round(action[2]), 0, config.ACTION_MAX["loaf_bread"]))

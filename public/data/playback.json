@@ -16,6 +16,7 @@
     "episode_days": 28,
     "policies": [
       "owner_heuristic",
+      "rl_v1",
       "max_action",
       "random_action",
       "do_nothing"
@@ -4808,6 +4809,4796 @@
             "wanted": "snack_bread",
             "result": "unmet",
             "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      }
+    ],
+    "rl_v1": [
+      {
+        "day": 1,
+        "date": "2025-01-01",
+        "day_name": "수",
+        "is_weekend": 0,
+        "is_holiday": 1,
+        "temp_max": 7.2,
+        "temp_min": -3.3,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 1,
+        "action": {
+          "sandwich": 1,
+          "snack_bread": 1,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 1,
+          "snack_bread": 1,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 18,
+          "snack_bread": 181,
+          "loaf_bread": 57
+        },
+        "customer_trust": 95,
+        "leftover_loaf": 0,
+        "revenue": 15800,
+        "baking_cost": 5905,
+        "daily_profit": 9895,
+        "reward": 0.09895,
+        "cum_profit": 9895,
+        "waste_rate": 0.0,
+        "stockout_rate": 105.3,
+        "customer_events": [
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 24,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 29,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "date": "2025-01-02",
+        "day_name": "목",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 4.4,
+        "temp_min": -4.4,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 58,
+          "snack_bread": 187,
+          "loaf_bread": 22
+        },
+        "customer_trust": 90,
+        "leftover_loaf": 0,
+        "revenue": 9300,
+        "baking_cost": 2980,
+        "daily_profit": 6320,
+        "reward": 0.0632,
+        "cum_profit": 16215,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.5,
+        "customer_events": [
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 22,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 27,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 20,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "date": "2025-01-03",
+        "day_name": "금",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 1.4,
+        "temp_min": -5.5,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 37,
+          "snack_bread": 109,
+          "loaf_bread": 21
+        },
+        "customer_trust": 85,
+        "leftover_loaf": 0,
+        "revenue": 9300,
+        "baking_cost": 2980,
+        "daily_profit": 6320,
+        "reward": 0.0632,
+        "cum_profit": 22535,
+        "waste_rate": 0.0,
+        "stockout_rate": 107.0,
+        "customer_events": [
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 27,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "date": "2025-01-04",
+        "day_name": "토",
+        "is_weekend": 1,
+        "is_holiday": 0,
+        "temp_max": 2.9,
+        "temp_min": -5.4,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 20,
+          "snack_bread": 155,
+          "loaf_bread": 44
+        },
+        "customer_trust": 80,
+        "leftover_loaf": 0,
+        "revenue": 9300,
+        "baking_cost": 2980,
+        "daily_profit": 6320,
+        "reward": 0.0632,
+        "cum_profit": 28855,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.8,
+        "customer_events": [
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "date": "2025-01-05",
+        "day_name": "일",
+        "is_weekend": 1,
+        "is_holiday": 0,
+        "temp_max": 2.9,
+        "temp_min": -1.1,
+        "precipitation": 8.0,
+        "snowfall": 5.4,
+        "weather_type": "비",
+        "is_bad_weather": 1,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 11,
+          "snack_bread": 119,
+          "loaf_bread": 37
+        },
+        "customer_trust": 75,
+        "leftover_loaf": 0,
+        "revenue": 9300,
+        "baking_cost": 2980,
+        "daily_profit": 6320,
+        "reward": 0.0632,
+        "cum_profit": 35175,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.5,
+        "customer_events": [
+          {
+            "id": 29,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 27,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "date": "2025-01-06",
+        "day_name": "월",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 1.5,
+        "temp_min": -6.5,
+        "precipitation": 3.6,
+        "snowfall": 2.3,
+        "weather_type": "눈",
+        "is_bad_weather": 1,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 26,
+          "snack_bread": 89,
+          "loaf_bread": 14
+        },
+        "customer_trust": 70,
+        "leftover_loaf": 0,
+        "revenue": 5500,
+        "baking_cost": 1650,
+        "daily_profit": 3850,
+        "reward": 0.0385,
+        "cum_profit": 39025,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.7,
+        "customer_events": [
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "date": "2025-01-07",
+        "day_name": "화",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 0.4,
+        "temp_min": -10.0,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "한파",
+        "is_bad_weather": 1,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 21,
+          "snack_bread": 62,
+          "loaf_bread": 7
+        },
+        "customer_trust": 65,
+        "leftover_loaf": 0,
+        "revenue": 5500,
+        "baking_cost": 1650,
+        "daily_profit": 3850,
+        "reward": 0.0385,
+        "cum_profit": 42875,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.8,
+        "customer_events": [
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 27,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 7,
+            "sex": "여자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 8,
+        "date": "2025-01-08",
+        "day_name": "수",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 0.5,
+        "temp_min": -6.8,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 30,
+          "snack_bread": 82,
+          "loaf_bread": 12
+        },
+        "customer_trust": 60,
+        "leftover_loaf": 0,
+        "revenue": 5500,
+        "baking_cost": 1650,
+        "daily_profit": 3850,
+        "reward": 0.0385,
+        "cum_profit": 46725,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 22,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 9,
+        "date": "2025-01-09",
+        "day_name": "목",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": -6.8,
+        "temp_min": -12.2,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "한파",
+        "is_bad_weather": 1,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 19,
+          "snack_bread": 54,
+          "loaf_bread": 6
+        },
+        "customer_trust": 55,
+        "leftover_loaf": 0,
+        "revenue": 5500,
+        "baking_cost": 1650,
+        "daily_profit": 3850,
+        "reward": 0.0385,
+        "cum_profit": 50575,
+        "waste_rate": 0.0,
+        "stockout_rate": 107.0,
+        "customer_events": [
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 22,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 10,
+        "date": "2025-01-10",
+        "day_name": "금",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": -2.9,
+        "temp_min": -12.0,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "한파",
+        "is_bad_weather": 1,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 19,
+          "snack_bread": 48,
+          "loaf_bread": 7
+        },
+        "customer_trust": 50,
+        "leftover_loaf": 0,
+        "revenue": 5500,
+        "baking_cost": 1650,
+        "daily_profit": 3850,
+        "reward": 0.0385,
+        "cum_profit": 54425,
+        "waste_rate": 0.0,
+        "stockout_rate": 107.1,
+        "customer_events": [
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 27,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 29,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 20,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 11,
+        "date": "2025-01-11",
+        "day_name": "토",
+        "is_weekend": 1,
+        "is_holiday": 0,
+        "temp_max": -1.9,
+        "temp_min": -9.7,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 13,
+          "snack_bread": 93,
+          "loaf_bread": 20
+        },
+        "customer_trust": 45,
+        "leftover_loaf": 0,
+        "revenue": 5500,
+        "baking_cost": 1650,
+        "daily_profit": 3850,
+        "reward": 0.0385,
+        "cum_profit": 58275,
+        "waste_rate": 0.0,
+        "stockout_rate": 107.0,
+        "customer_events": [
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 24,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 29,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          }
+        ]
+      },
+      {
+        "day": 12,
+        "date": "2025-01-12",
+        "day_name": "일",
+        "is_weekend": 1,
+        "is_holiday": 0,
+        "temp_max": 1.1,
+        "temp_min": -6.6,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 1,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 2,
+          "loaf_bread": 1
+        },
+        "customer_trust": 40,
+        "leftover_loaf": 0,
+        "revenue": 5500,
+        "baking_cost": 1650,
+        "daily_profit": 3850,
+        "reward": 0.0385,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 20,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 7,
+            "sex": "여자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 27,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 13,
+        "date": "2025-01-13",
+        "day_name": "월",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 4.2,
+        "temp_min": -4.3,
+        "precipitation": 0.6,
+        "snowfall": 0.3,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 0
+        },
+        "customer_trust": 35,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 7,
+            "sex": "여자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 14,
+        "date": "2025-01-14",
+        "day_name": "화",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 5.6,
+        "temp_min": -2.8,
+        "precipitation": 0.5,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 37,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 7,
+            "sex": "여자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 24,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 27,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 15,
+        "date": "2025-01-15",
+        "day_name": "수",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": -2.2,
+        "temp_min": -5.9,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 39,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 29,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 16,
+        "date": "2025-01-16",
+        "day_name": "목",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 2.6,
+        "temp_min": -4.8,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 41,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 20,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 17,
+        "date": "2025-01-17",
+        "day_name": "금",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 3.4,
+        "temp_min": -6.7,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 1,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1
+        },
+        "customer_trust": 36,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 7,
+            "sex": "여자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 29,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 24,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 22,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 18,
+        "date": "2025-01-18",
+        "day_name": "토",
+        "is_weekend": 1,
+        "is_holiday": 0,
+        "temp_max": 4.7,
+        "temp_min": -4.1,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 38,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 20,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 22,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 19,
+        "date": "2025-01-19",
+        "day_name": "일",
+        "is_weekend": 1,
+        "is_holiday": 0,
+        "temp_max": 6.5,
+        "temp_min": -2.6,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 40,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 27,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 20,
+        "date": "2025-01-20",
+        "day_name": "월",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 5.3,
+        "temp_min": -0.9,
+        "precipitation": 0.1,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1
+        },
+        "customer_trust": 35,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 7,
+            "sex": "여자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 20,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 21,
+        "date": "2025-01-21",
+        "day_name": "화",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 5.3,
+        "temp_min": -2.9,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 1,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 37,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 22,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 29,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 22,
+        "date": "2025-01-22",
+        "day_name": "수",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 5.0,
+        "temp_min": -1.8,
+        "precipitation": 0.2,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 39,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 22,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 24,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 7,
+            "sex": "여자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 23,
+        "date": "2025-01-23",
+        "day_name": "목",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 4.9,
+        "temp_min": -4.1,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 41,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 21,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 20,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 13,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 22,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 1,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 7,
+            "sex": "여자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 24,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 5,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 24,
+        "date": "2025-01-24",
+        "day_name": "금",
+        "is_weekend": 0,
+        "is_holiday": 0,
+        "temp_max": 7.2,
+        "temp_min": -3.6,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1
+        },
+        "customer_trust": 36,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 29,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 27,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 24,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          }
+        ]
+      },
+      {
+        "day": 25,
+        "date": "2025-01-25",
+        "day_name": "토",
+        "is_weekend": 1,
+        "is_holiday": 0,
+        "temp_max": 8.3,
+        "temp_min": -1.4,
+        "precipitation": 0.0,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 38,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 10,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 29,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 26,
+        "date": "2025-01-26",
+        "day_name": "일",
+        "is_weekend": 1,
+        "is_holiday": 0,
+        "temp_max": 6.1,
+        "temp_min": -0.3,
+        "precipitation": 0.1,
+        "snowfall": 0.0,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 40,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 25,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 27,
+            "sex": "남자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 20,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 28,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 24,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 7,
+            "sex": "여자",
+            "role": "general",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 27,
+        "date": "2025-01-27",
+        "day_name": "월",
+        "is_weekend": 0,
+        "is_holiday": 1,
+        "temp_max": 2.2,
+        "temp_min": -5.0,
+        "precipitation": 6.1,
+        "snowfall": 3.7,
+        "weather_type": "비",
+        "is_bad_weather": 1,
+        "is_event": 1,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 1,
+          "loaf_bread": 1
+        },
+        "customer_trust": 35,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 24,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 23,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 30,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 17,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 20,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 8,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 16,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 9,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
+          },
+          {
+            "id": 29,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          }
+        ]
+      },
+      {
+        "day": 28,
+        "date": "2025-01-28",
+        "day_name": "화",
+        "is_weekend": 0,
+        "is_holiday": 1,
+        "temp_max": -4.0,
+        "temp_min": -6.0,
+        "precipitation": 0.1,
+        "snowfall": 0.1,
+        "weather_type": "맑음",
+        "is_bad_weather": 0,
+        "is_event": 0,
+        "action": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "sales": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0,
+          "discount_loaf": 0
+        },
+        "waste": {
+          "sandwich": 0,
+          "snack_bread": 0
+        },
+        "unmet": {
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
+        },
+        "customer_trust": 37,
+        "leftover_loaf": 0,
+        "revenue": 0,
+        "baking_cost": 0,
+        "daily_profit": 0,
+        "reward": 0.0,
+        "cum_profit": 62125,
+        "waste_rate": 0.0,
+        "stockout_rate": 106.9,
+        "customer_events": [
+          {
+            "id": 22,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 2,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 4,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 26,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 6,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 3,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 20,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 12,
+            "sex": "여자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 11,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 18,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 14,
+            "sex": "남자",
+            "role": "office_worker",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 15,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "apartment",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 24,
+            "sex": "남자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
+          },
+          {
+            "id": 19,
+            "sex": "여자",
+            "role": "resident",
+            "origin": "office",
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           }
         ]
       }
@@ -9617,34 +14408,34 @@
         "is_bad_weather": 0,
         "is_event": 1,
         "action": {
-          "sandwich": 42,
-          "snack_bread": 59,
-          "loaf_bread": 36
+          "sandwich": 15,
+          "snack_bread": 96,
+          "loaf_bread": 9
         },
         "sales": {
-          "sandwich": 19,
-          "snack_bread": 59,
-          "loaf_bread": 36,
+          "sandwich": 15,
+          "snack_bread": 96,
+          "loaf_bread": 9,
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 23,
+          "sandwich": 0,
           "snack_bread": 0
         },
         "unmet": {
-          "sandwich": 0,
-          "snack_bread": 111,
-          "loaf_bread": 22
+          "sandwich": 4,
+          "snack_bread": 81,
+          "loaf_bread": 49
         },
         "customer_trust": 95,
         "leftover_loaf": 0,
-        "revenue": 545700,
-        "baking_cost": 260720,
-        "daily_profit": 284980,
-        "reward": 2.8498,
-        "cum_profit": 284980,
-        "waste_rate": 19.1,
-        "stockout_rate": 54.7,
+        "revenue": 511800,
+        "baking_cost": 186405,
+        "daily_profit": 325395,
+        "reward": 3.25395,
+        "cum_profit": 325395,
+        "waste_rate": 0.0,
+        "stockout_rate": 55.1,
         "customer_events": [
           {
             "id": 21,
@@ -9652,15 +14443,15 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
           },
           {
             "id": 4,
             "sex": "남자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
+            "wanted": "snack_bread",
             "result": "unmet",
             "msg": "빵이 다 떨어졌네..."
           },
@@ -9670,17 +14461,17 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
           },
           {
             "id": 24,
             "sex": "남자",
             "role": "resident",
             "origin": "office",
-            "wanted": "sandwich",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 9,
@@ -9696,7 +14487,7 @@
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "snack_bread",
+            "wanted": "loaf_bread",
             "result": "unmet",
             "msg": "빵이 다 떨어졌네..."
           },
@@ -9705,9 +14496,9 @@
             "sex": "남자",
             "role": "general",
             "origin": "office",
-            "wanted": "sandwich",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 5,
@@ -9715,8 +14506,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 29,
@@ -9733,8 +14524,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
           },
           {
             "id": 3,
@@ -9750,9 +14541,9 @@
             "sex": "여자",
             "role": "resident",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
           },
           {
             "id": 14,
@@ -9760,17 +14551,17 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 2,
             "sex": "여자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "sandwich",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           }
         ]
       },
@@ -9788,14 +14579,14 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 52,
-          "snack_bread": 86,
-          "loaf_bread": 13
+          "sandwich": 28,
+          "snack_bread": 127,
+          "loaf_bread": 29
         },
         "sales": {
-          "sandwich": 52,
-          "snack_bread": 86,
-          "loaf_bread": 13,
+          "sandwich": 28,
+          "snack_bread": 127,
+          "loaf_bread": 23,
           "discount_loaf": 0
         },
         "waste": {
@@ -9803,19 +14594,19 @@
           "snack_bread": 0
         },
         "unmet": {
-          "sandwich": 6,
-          "snack_bread": 85,
-          "loaf_bread": 10
+          "sandwich": 30,
+          "snack_bread": 49,
+          "loaf_bread": 0
         },
         "customer_trust": 90,
-        "leftover_loaf": 0,
-        "revenue": 736300,
-        "baking_cost": 287930,
-        "daily_profit": 448370,
-        "reward": 4.4837,
-        "cum_profit": 733350,
-        "waste_rate": 8.4,
-        "stockout_rate": 47.7,
+        "leftover_loaf": 6,
+        "revenue": 791100,
+        "baking_cost": 298660,
+        "daily_profit": 492440,
+        "reward": 4.9244,
+        "cum_profit": 817835,
+        "waste_rate": 0.0,
+        "stockout_rate": 43.4,
         "customer_events": [
           {
             "id": 2,
@@ -9895,15 +14686,15 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "loaf_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 27,
             "sex": "남자",
             "role": "general",
             "origin": "office",
-            "wanted": "sandwich",
+            "wanted": "snack_bread",
             "result": "unmet",
             "msg": "빵이 다 떨어졌네..."
           },
@@ -9922,17 +14713,17 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 1,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "substitute",
+            "msg": "원래 빵 없어서 간식빵으로!"
           },
           {
             "id": 17,
@@ -9959,34 +14750,34 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 24,
-          "snack_bread": 179,
-          "loaf_bread": 17
+          "sandwich": 19,
+          "snack_bread": 139,
+          "loaf_bread": 43
         },
         "sales": {
-          "sandwich": 24,
+          "sandwich": 19,
           "snack_bread": 100,
-          "loaf_bread": 17,
-          "discount_loaf": 0
+          "loaf_bread": 16,
+          "discount_loaf": 6
         },
         "waste": {
           "sandwich": 0,
-          "snack_bread": 79
+          "snack_bread": 39
         },
         "unmet": {
-          "sandwich": 13,
+          "sandwich": 18,
           "snack_bread": 0,
-          "loaf_bread": 5
+          "loaf_bread": 0
         },
         "customer_trust": 85,
-        "leftover_loaf": 0,
-        "revenue": 629500,
-        "baking_cost": 336320,
-        "daily_profit": 293180,
-        "reward": 2.9318,
-        "cum_profit": 1026530,
-        "waste_rate": 14.4,
-        "stockout_rate": 39.1,
+        "leftover_loaf": 27,
+        "revenue": 608000,
+        "baking_cost": 311395,
+        "daily_profit": 296605,
+        "reward": 2.96605,
+        "cum_profit": 1114440,
+        "waste_rate": 4.4,
+        "stockout_rate": 36.2,
         "customer_events": [
           {
             "id": 14,
@@ -10130,34 +14921,34 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 14,
-          "snack_bread": 46,
-          "loaf_bread": 39
+          "sandwich": 45,
+          "snack_bread": 159,
+          "loaf_bread": 32
         },
         "sales": {
-          "sandwich": 14,
-          "snack_bread": 46,
-          "loaf_bread": 39,
-          "discount_loaf": 0
+          "sandwich": 20,
+          "snack_bread": 141,
+          "loaf_bread": 23,
+          "discount_loaf": 22
         },
         "waste": {
-          "sandwich": 0,
-          "snack_bread": 0
+          "sandwich": 25,
+          "snack_bread": 18
         },
         "unmet": {
-          "sandwich": 6,
-          "snack_bread": 98,
-          "loaf_bread": 6
+          "sandwich": 0,
+          "snack_bread": 0,
+          "loaf_bread": 0
         },
-        "customer_trust": 80,
-        "leftover_loaf": 0,
-        "revenue": 480300,
-        "baking_cost": 166480,
-        "daily_profit": 313820,
-        "reward": 3.1382,
-        "cum_profit": 1340350,
-        "waste_rate": 11.4,
-        "stockout_rate": 42.5,
+        "customer_trust": 87,
+        "leftover_loaf": 9,
+        "revenue": 852800,
+        "baking_cost": 395895,
+        "daily_profit": 456905,
+        "reward": 4.56905,
+        "cum_profit": 1571345,
+        "waste_rate": 8.7,
+        "stockout_rate": 28.1,
         "customer_events": [
           {
             "id": 9,
@@ -10165,8 +14956,8 @@
             "role": "office_worker",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 14,
@@ -10174,8 +14965,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 16,
@@ -10183,8 +14974,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 30,
@@ -10192,8 +14983,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 3,
@@ -10201,53 +14992,53 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "loaf_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 10,
             "sex": "여자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 11,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 1,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 26,
             "sex": "남자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 28,
             "sex": "남자",
             "role": "resident",
             "origin": "office",
-            "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 23,
@@ -10255,17 +15046,17 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 4,
             "sex": "남자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 25,
@@ -10273,8 +15064,8 @@
             "role": "general",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 19,
@@ -10282,8 +15073,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           }
         ]
       },
@@ -10301,34 +15092,34 @@
         "is_bad_weather": 1,
         "is_event": 0,
         "action": {
-          "sandwich": 2,
-          "snack_bread": 191,
-          "loaf_bread": 9
+          "sandwich": 25,
+          "snack_bread": 43,
+          "loaf_bread": 11
         },
         "sales": {
-          "sandwich": 2,
-          "snack_bread": 119,
-          "loaf_bread": 9,
-          "discount_loaf": 0
+          "sandwich": 12,
+          "snack_bread": 43,
+          "loaf_bread": 11,
+          "discount_loaf": 9
         },
         "waste": {
-          "sandwich": 0,
-          "snack_bread": 72
+          "sandwich": 13,
+          "snack_bread": 0
         },
         "unmet": {
-          "sandwich": 9,
-          "snack_bread": 0,
-          "loaf_bread": 29
+          "sandwich": 0,
+          "snack_bread": 93,
+          "loaf_bread": 23
         },
-        "customer_trust": 75,
+        "customer_trust": 82,
         "leftover_loaf": 0,
-        "revenue": 514700,
-        "baking_cost": 274730,
-        "daily_profit": 239970,
-        "reward": 2.3997,
-        "cum_profit": 1580320,
-        "waste_rate": 14.5,
-        "stockout_rate": 39.6,
+        "revenue": 326650,
+        "baking_cost": 148465,
+        "daily_profit": 178185,
+        "reward": 1.78185,
+        "cum_profit": 1749530,
+        "waste_rate": 9.7,
+        "stockout_rate": 34.7,
         "customer_events": [
           {
             "id": 29,
@@ -10336,17 +15127,17 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 3,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "loaf_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 13,
@@ -10354,8 +15145,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 2,
@@ -10363,15 +15154,15 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 19,
             "sex": "여자",
             "role": "resident",
             "origin": "office",
-            "wanted": "sandwich",
+            "wanted": "snack_bread",
             "result": "unmet",
             "msg": "빵이 다 떨어졌네..."
           },
@@ -10381,15 +15172,15 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 8,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
+            "wanted": "snack_bread",
             "result": "unmet",
             "msg": "빵이 다 떨어졌네..."
           },
@@ -10398,9 +15189,9 @@
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 17,
@@ -10408,8 +15199,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 5,
@@ -10417,8 +15208,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 25,
@@ -10426,8 +15217,8 @@
             "role": "general",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 18,
@@ -10435,15 +15226,15 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 27,
             "sex": "남자",
             "role": "general",
             "origin": "office",
-            "wanted": "snack_bread",
+            "wanted": "sandwich",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -10453,8 +15244,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           }
         ]
       },
@@ -10472,19 +15263,19 @@
         "is_bad_weather": 1,
         "is_event": 0,
         "action": {
-          "sandwich": 51,
-          "snack_bread": 81,
-          "loaf_bread": 30
+          "sandwich": 28,
+          "snack_bread": 166,
+          "loaf_bread": 39
         },
         "sales": {
           "sandwich": 26,
-          "snack_bread": 78,
+          "snack_bread": 82,
           "loaf_bread": 15,
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 25,
-          "snack_bread": 3
+          "sandwich": 2,
+          "snack_bread": 84
         },
         "unmet": {
           "sandwich": 0,
@@ -10492,14 +15283,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 77,
-        "leftover_loaf": 15,
-        "revenue": 547900,
-        "baking_cost": 306405,
-        "daily_profit": 241495,
-        "reward": 2.41495,
-        "cum_profit": 1821815,
-        "waste_rate": 15.9,
-        "stockout_rate": 35.4,
+        "leftover_loaf": 24,
+        "revenue": 563100,
+        "baking_cost": 367030,
+        "daily_profit": 196070,
+        "reward": 1.9607,
+        "cum_profit": 1945600,
+        "waste_rate": 13.5,
+        "stockout_rate": 30.9,
         "customer_events": [
           {
             "id": 12,
@@ -10643,34 +15434,34 @@
         "is_bad_weather": 1,
         "is_event": 0,
         "action": {
-          "sandwich": 59,
-          "snack_bread": 42,
-          "loaf_bread": 2
+          "sandwich": 56,
+          "snack_bread": 118,
+          "loaf_bread": 38
         },
         "sales": {
           "sandwich": 24,
-          "snack_bread": 42,
-          "loaf_bread": 2,
+          "snack_bread": 65,
+          "loaf_bread": 5,
           "discount_loaf": 5
         },
         "waste": {
-          "sandwich": 35,
-          "snack_bread": 0
+          "sandwich": 32,
+          "snack_bread": 53
         },
         "unmet": {
           "sandwich": 0,
-          "snack_bread": 24,
-          "loaf_bread": 3
+          "snack_bread": 0,
+          "loaf_bread": 0
         },
         "customer_trust": 72,
-        "leftover_loaf": 0,
-        "revenue": 340350,
-        "baking_cost": 231735,
-        "daily_profit": 108615,
-        "reward": 1.08615,
-        "cum_profit": 1930430,
-        "waste_rate": 18.8,
-        "stockout_rate": 34.9,
+        "leftover_loaf": 33,
+        "revenue": 444250,
+        "baking_cost": 383440,
+        "daily_profit": 60810,
+        "reward": 0.6081,
+        "cum_profit": 2006410,
+        "waste_rate": 18.9,
+        "stockout_rate": 28.5,
         "customer_events": [
           {
             "id": 18,
@@ -10678,8 +15469,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 11,
@@ -10687,26 +15478,26 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "loaf_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 5,
             "sex": "여자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 30,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 23,
@@ -10758,9 +15549,9 @@
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 6,
@@ -10776,7 +15567,7 @@
             "sex": "남자",
             "role": "resident",
             "origin": "office",
-            "wanted": "sandwich",
+            "wanted": "snack_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -10786,8 +15577,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "loaf_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 16,
@@ -10814,34 +15605,34 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 3,
-          "snack_bread": 39,
-          "loaf_bread": 42
+          "sandwich": 7,
+          "snack_bread": 104,
+          "loaf_bread": 3
         },
         "sales": {
-          "sandwich": 3,
-          "snack_bread": 39,
-          "loaf_bread": 15,
-          "discount_loaf": 0
+          "sandwich": 7,
+          "snack_bread": 86,
+          "loaf_bread": 3,
+          "discount_loaf": 8
         },
         "waste": {
           "sandwich": 0,
-          "snack_bread": 0
+          "snack_bread": 18
         },
         "unmet": {
-          "sandwich": 30,
-          "snack_bread": 47,
-          "loaf_bread": 0
+          "sandwich": 26,
+          "snack_bread": 0,
+          "loaf_bread": 4
         },
         "customer_trust": 67,
-        "leftover_loaf": 27,
-        "revenue": 250200,
-        "baking_cost": 129945,
-        "daily_profit": 120255,
-        "reward": 1.20255,
-        "cum_profit": 2050685,
+        "leftover_loaf": 0,
+        "revenue": 410800,
+        "baking_cost": 163745,
+        "daily_profit": 247055,
+        "reward": 2.47055,
+        "cum_profit": 2253465,
         "waste_rate": 17.9,
-        "stockout_rate": 37.4,
+        "stockout_rate": 28.3,
         "customer_events": [
           {
             "id": 3,
@@ -10849,8 +15640,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 12,
@@ -10867,8 +15658,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 4,
@@ -10876,8 +15667,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 11,
@@ -10885,8 +15676,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "loaf_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 25,
@@ -10894,8 +15685,8 @@
             "role": "general",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 18,
@@ -10911,7 +15702,7 @@
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
+            "wanted": "sandwich",
             "result": "unmet",
             "msg": "빵이 다 떨어졌네..."
           },
@@ -10920,9 +15711,9 @@
             "sex": "여자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 22,
@@ -10930,8 +15721,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 9,
@@ -10939,8 +15730,8 @@
             "role": "office_worker",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 5,
@@ -10948,8 +15739,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 15,
@@ -10957,15 +15748,15 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 21,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
+            "wanted": "sandwich",
             "result": "unmet",
             "msg": "빵이 다 떨어졌네..."
           }
@@ -10985,34 +15776,34 @@
         "is_bad_weather": 1,
         "is_event": 0,
         "action": {
-          "sandwich": 14,
-          "snack_bread": 174,
-          "loaf_bread": 34
+          "sandwich": 57,
+          "snack_bread": 38,
+          "loaf_bread": 31
         },
         "sales": {
-          "sandwich": 14,
-          "snack_bread": 53,
-          "loaf_bread": 4,
-          "discount_loaf": 4
+          "sandwich": 21,
+          "snack_bread": 38,
+          "loaf_bread": 8,
+          "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 0,
-          "snack_bread": 121
+          "sandwich": 36,
+          "snack_bread": 0
         },
         "unmet": {
-          "sandwich": 7,
-          "snack_bread": 0,
+          "sandwich": 0,
+          "snack_bread": 13,
           "loaf_bread": 0
         },
         "customer_trust": 62,
-        "leftover_loaf": 30,
-        "revenue": 325400,
-        "baking_cost": 328470,
-        "daily_profit": -3070,
-        "reward": -0.0307,
-        "cum_profit": 2047615,
-        "waste_rate": 22.9,
-        "stockout_rate": 35.9,
+        "leftover_loaf": 23,
+        "revenue": 324900,
+        "baking_cost": 268415,
+        "daily_profit": 56485,
+        "reward": 0.56485,
+        "cum_profit": 2309950,
+        "waste_rate": 20.6,
+        "stockout_rate": 27.6,
         "customer_events": [
           {
             "id": 16,
@@ -11020,8 +15811,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 28,
@@ -11029,8 +15820,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 9,
@@ -11047,15 +15838,15 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 21,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
+            "wanted": "sandwich",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11064,7 +15855,7 @@
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "snack_bread",
+            "wanted": "loaf_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11074,33 +15865,33 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 30,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 11,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 3,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "snack_bread",
+            "wanted": "loaf_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11110,24 +15901,24 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 22,
             "sex": "남자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 25,
             "sex": "남자",
             "role": "general",
             "origin": "office",
-            "wanted": "snack_bread",
+            "wanted": "sandwich",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11137,8 +15928,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           }
         ]
       },
@@ -11156,34 +15947,34 @@
         "is_bad_weather": 1,
         "is_event": 0,
         "action": {
-          "sandwich": 6,
-          "snack_bread": 18,
-          "loaf_bread": 8
+          "sandwich": 42,
+          "snack_bread": 198,
+          "loaf_bread": 12
         },
         "sales": {
-          "sandwich": 6,
-          "snack_bread": 18,
+          "sandwich": 20,
+          "snack_bread": 42,
           "loaf_bread": 4,
           "discount_loaf": 4
         },
         "waste": {
-          "sandwich": 0,
-          "snack_bread": 0
+          "sandwich": 22,
+          "snack_bread": 156
         },
         "unmet": {
-          "sandwich": 14,
-          "snack_bread": 28,
+          "sandwich": 0,
+          "snack_bread": 0,
           "loaf_bread": 0
         },
         "customer_trust": 57,
-        "leftover_loaf": 4,
-        "revenue": 140400,
-        "baking_cost": 54690,
-        "daily_profit": 85710,
-        "reward": 0.8571,
-        "cum_profit": 2133325,
-        "waste_rate": 22.2,
-        "stockout_rate": 37.1,
+        "leftover_loaf": 8,
+        "revenue": 322600,
+        "baking_cost": 405990,
+        "daily_profit": -83390,
+        "reward": -0.8339,
+        "cum_profit": 2226560,
+        "waste_rate": 28.1,
+        "stockout_rate": 26.4,
         "customer_events": [
           {
             "id": 8,
@@ -11191,8 +15982,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 27,
@@ -11200,42 +15991,42 @@
             "role": "general",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 17,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 18,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 6,
             "sex": "여자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 30,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
+            "wanted": "snack_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11244,18 +16035,18 @@
             "sex": "남자",
             "role": "general",
             "origin": "office",
-            "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 29,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 9,
@@ -11271,27 +16062,27 @@
             "sex": "여자",
             "role": "resident",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 23,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "snack_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 15,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 20,
@@ -11299,8 +16090,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 28,
@@ -11308,8 +16099,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           }
         ]
       },
@@ -11327,34 +16118,34 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 25,
-          "snack_bread": 40,
-          "loaf_bread": 23
+          "sandwich": 57,
+          "snack_bread": 132,
+          "loaf_bread": 1
         },
         "sales": {
           "sandwich": 13,
-          "snack_bread": 40,
-          "loaf_bread": 19,
-          "discount_loaf": 4
+          "snack_bread": 91,
+          "loaf_bread": 1,
+          "discount_loaf": 8
         },
         "waste": {
-          "sandwich": 12,
-          "snack_bread": 0
+          "sandwich": 44,
+          "snack_bread": 41
         },
         "unmet": {
           "sandwich": 0,
-          "snack_bread": 48,
-          "loaf_bread": 0
+          "snack_bread": 0,
+          "loaf_bread": 14
         },
         "customer_trust": 52,
-        "leftover_loaf": 4,
-        "revenue": 352000,
-        "baking_cost": 164275,
-        "daily_profit": 187725,
-        "reward": 1.87725,
-        "cum_profit": 2321050,
-        "waste_rate": 21.7,
-        "stockout_rate": 37.3,
+        "leftover_loaf": 0,
+        "revenue": 457800,
+        "baking_cost": 343935,
+        "daily_profit": 113865,
+        "reward": 1.13865,
+        "cum_profit": 2340425,
+        "waste_rate": 31.0,
+        "stockout_rate": 25.3,
         "customer_events": [
           {
             "id": 9,
@@ -11362,8 +16153,8 @@
             "role": "office_worker",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 2,
@@ -11434,8 +16225,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 6,
@@ -11452,8 +16243,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 21,
@@ -11461,8 +16252,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 25,
@@ -11470,8 +16261,8 @@
             "role": "general",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 15,
@@ -11479,8 +16270,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           }
         ]
       },
@@ -11498,34 +16289,34 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 10,
-          "snack_bread": 27,
-          "loaf_bread": 31
+          "sandwich": 7,
+          "snack_bread": 155,
+          "loaf_bread": 21
         },
         "sales": {
-          "sandwich": 10,
-          "snack_bread": 27,
-          "loaf_bread": 17,
-          "discount_loaf": 4
+          "sandwich": 7,
+          "snack_bread": 77,
+          "loaf_bread": 21,
+          "discount_loaf": 0
         },
         "waste": {
           "sandwich": 0,
-          "snack_bread": 0
+          "snack_bread": 78
         },
         "unmet": {
-          "sandwich": 3,
-          "snack_bread": 49,
+          "sandwich": 6,
+          "snack_bread": 0,
           "loaf_bread": 0
         },
         "customer_trust": 47,
-        "leftover_loaf": 14,
-        "revenue": 272100,
-        "baking_cost": 116310,
-        "daily_profit": 155790,
-        "reward": 1.5579,
-        "cum_profit": 2476840,
-        "waste_rate": 20.6,
-        "stockout_rate": 38.1,
+        "leftover_loaf": 0,
+        "revenue": 453600,
+        "baking_cost": 261275,
+        "daily_profit": 192325,
+        "reward": 1.92325,
+        "cum_profit": 2532750,
+        "waste_rate": 31.4,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 20,
@@ -11533,8 +16324,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 28,
@@ -11551,8 +16342,8 @@
             "role": "general",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 15,
@@ -11596,8 +16387,8 @@
             "role": "general",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 26,
@@ -11605,8 +16396,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 12,
@@ -11632,8 +16423,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 2,
@@ -11650,8 +16441,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           }
         ]
       },
@@ -11669,9 +16460,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 9,
-          "snack_bread": 117,
-          "loaf_bread": 20
+          "sandwich": 33,
+          "snack_bread": 49,
+          "loaf_bread": 25
         },
         "sales": {
           "sandwich": 1,
@@ -11680,8 +16471,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 8,
-          "snack_bread": 116
+          "sandwich": 32,
+          "snack_bread": 48
         },
         "unmet": {
           "sandwich": 0,
@@ -11689,14 +16480,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 42,
-        "leftover_loaf": 19,
+        "leftover_loaf": 24,
         "revenue": 15800,
-        "baking_cost": 214935,
-        "daily_profit": -199135,
-        "reward": -1.99135,
-        "cum_profit": 2277705,
-        "waste_rate": 26.5,
-        "stockout_rate": 38.0,
+        "baking_cost": 202945,
+        "daily_profit": -187145,
+        "reward": -1.87145,
+        "cum_profit": 2345605,
+        "waste_rate": 35.9,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 30,
@@ -11840,9 +16631,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 45,
-          "snack_bread": 153,
-          "loaf_bread": 1
+          "sandwich": 37,
+          "snack_bread": 57,
+          "loaf_bread": 25
         },
         "sales": {
           "sandwich": 0,
@@ -11851,8 +16642,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 45,
-          "snack_bread": 152
+          "sandwich": 37,
+          "snack_bread": 56
         },
         "unmet": {
           "sandwich": 0,
@@ -11860,14 +16651,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 37,
-        "leftover_loaf": 0,
+        "leftover_loaf": 24,
         "revenue": 9300,
-        "baking_cost": 336765,
-        "daily_profit": -327465,
-        "reward": -3.27465,
-        "cum_profit": 1950240,
-        "waste_rate": 37.2,
-        "stockout_rate": 38.0,
+        "baking_cost": 225285,
+        "daily_profit": -215985,
+        "reward": -2.15985,
+        "cum_profit": 2129620,
+        "waste_rate": 41.3,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 3,
@@ -12011,9 +16802,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 26,
-          "snack_bread": 31,
-          "loaf_bread": 8
+          "sandwich": 1,
+          "snack_bread": 133,
+          "loaf_bread": 23
         },
         "sales": {
           "sandwich": 0,
@@ -12022,8 +16813,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 26,
-          "snack_bread": 31
+          "sandwich": 1,
+          "snack_bread": 133
         },
         "unmet": {
           "sandwich": 0,
@@ -12031,14 +16822,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 32,
-        "leftover_loaf": 8,
+        "leftover_loaf": 23,
         "revenue": 0,
-        "baking_cost": 130480,
-        "daily_profit": -130480,
-        "reward": -1.3048,
-        "cum_profit": 1819760,
-        "waste_rate": 41.1,
-        "stockout_rate": 38.0,
+        "baking_cost": 217765,
+        "daily_profit": -217765,
+        "reward": -2.17765,
+        "cum_profit": 1911855,
+        "waste_rate": 46.7,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 28,
@@ -12182,9 +16973,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 35,
-          "snack_bread": 136,
-          "loaf_bread": 46
+          "sandwich": 43,
+          "snack_bread": 186,
+          "loaf_bread": 4
         },
         "sales": {
           "sandwich": 0,
@@ -12193,8 +16984,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 35,
-          "snack_bread": 136
+          "sandwich": 43,
+          "snack_bread": 186
         },
         "unmet": {
           "sandwich": 0,
@@ -12202,14 +16993,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 27,
-        "leftover_loaf": 46,
+        "leftover_loaf": 4,
         "revenue": 0,
-        "baking_cost": 359155,
-        "daily_profit": -359155,
-        "reward": -3.59155,
-        "cum_profit": 1460605,
-        "waste_rate": 51.6,
-        "stockout_rate": 38.0,
+        "baking_cost": 379755,
+        "daily_profit": -379755,
+        "reward": -3.79755,
+        "cum_profit": 1532100,
+        "waste_rate": 57.2,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 2,
@@ -12353,9 +17144,9 @@
         "is_bad_weather": 0,
         "is_event": 1,
         "action": {
-          "sandwich": 2,
-          "snack_bread": 16,
-          "loaf_bread": 41
+          "sandwich": 53,
+          "snack_bread": 65,
+          "loaf_bread": 45
         },
         "sales": {
           "sandwich": 0,
@@ -12364,8 +17155,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 2,
-          "snack_bread": 16
+          "sandwich": 53,
+          "snack_bread": 65
         },
         "unmet": {
           "sandwich": 0,
@@ -12373,14 +17164,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 22,
-        "leftover_loaf": 41,
+        "leftover_loaf": 45,
         "revenue": 0,
-        "baking_cost": 94780,
-        "daily_profit": -94780,
-        "reward": -0.9478,
-        "cum_profit": 1365825,
-        "waste_rate": 53.7,
-        "stockout_rate": 38.0,
+        "baking_cost": 315725,
+        "daily_profit": -315725,
+        "reward": -3.15725,
+        "cum_profit": 1216375,
+        "waste_rate": 65.3,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 19,
@@ -12524,9 +17315,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 37,
-          "snack_bread": 83,
-          "loaf_bread": 33
+          "sandwich": 31,
+          "snack_bread": 143,
+          "loaf_bread": 17
         },
         "sales": {
           "sandwich": 0,
@@ -12535,8 +17326,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 37,
-          "snack_bread": 83
+          "sandwich": 31,
+          "snack_bread": 143
         },
         "unmet": {
           "sandwich": 0,
@@ -12544,14 +17335,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 17,
-        "leftover_loaf": 33,
+        "leftover_loaf": 17,
         "revenue": 0,
-        "baking_cost": 273065,
-        "daily_profit": -273065,
-        "reward": -2.73065,
-        "cum_profit": 1092760,
-        "waste_rate": 62.2,
-        "stockout_rate": 38.0,
+        "baking_cost": 308915,
+        "daily_profit": -308915,
+        "reward": -3.08915,
+        "cum_profit": 907460,
+        "waste_rate": 73.9,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 8,
@@ -12695,9 +17486,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 57,
-          "snack_bread": 71,
-          "loaf_bread": 27
+          "sandwich": 34,
+          "snack_bread": 109,
+          "loaf_bread": 0
         },
         "sales": {
           "sandwich": 0,
@@ -12706,8 +17497,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 57,
-          "snack_bread": 71
+          "sandwich": 34,
+          "snack_bread": 109
         },
         "unmet": {
           "sandwich": 0,
@@ -12715,14 +17506,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 12,
-        "leftover_loaf": 27,
+        "leftover_loaf": 0,
         "revenue": 0,
-        "baking_cost": 305705,
-        "daily_profit": -305705,
-        "reward": -3.05705,
-        "cum_profit": 787055,
-        "waste_rate": 72.4,
-        "stockout_rate": 38.0,
+        "baking_cost": 244420,
+        "daily_profit": -244420,
+        "reward": -2.4442,
+        "cum_profit": 663040,
+        "waste_rate": 80.9,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 10,
@@ -12866,9 +17657,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 43,
-          "snack_bread": 42,
-          "loaf_bread": 21
+          "sandwich": 48,
+          "snack_bread": 129,
+          "loaf_bread": 42
         },
         "sales": {
           "sandwich": 0,
@@ -12877,8 +17668,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 43,
-          "snack_bread": 42
+          "sandwich": 48,
+          "snack_bread": 129
         },
         "unmet": {
           "sandwich": 0,
@@ -12886,14 +17677,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 7,
-        "leftover_loaf": 21,
+        "leftover_loaf": 42,
         "revenue": 0,
-        "baking_cost": 216285,
-        "daily_profit": -216285,
-        "reward": -2.16285,
-        "cum_profit": 570770,
-        "waste_rate": 79.7,
-        "stockout_rate": 38.0,
+        "baking_cost": 381270,
+        "daily_profit": -381270,
+        "reward": -3.8127,
+        "cum_profit": 281770,
+        "waste_rate": 91.7,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 16,
@@ -13037,9 +17828,9 @@
         "is_bad_weather": 0,
         "is_event": 1,
         "action": {
-          "sandwich": 23,
-          "snack_bread": 81,
-          "loaf_bread": 23
+          "sandwich": 46,
+          "snack_bread": 88,
+          "loaf_bread": 11
         },
         "sales": {
           "sandwich": 0,
@@ -13048,8 +17839,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 23,
-          "snack_bread": 81
+          "sandwich": 46,
+          "snack_bread": 88
         },
         "unmet": {
           "sandwich": 0,
@@ -13057,14 +17848,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 2,
-        "leftover_loaf": 23,
+        "leftover_loaf": 11,
         "revenue": 0,
-        "baking_cost": 212955,
-        "daily_profit": -212955,
-        "reward": -2.12955,
-        "cum_profit": 357815,
-        "waste_rate": 87.1,
-        "stockout_rate": 38.0,
+        "baking_cost": 269740,
+        "daily_profit": -269740,
+        "reward": -2.6974,
+        "cum_profit": 12030,
+        "waste_rate": 99.6,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 30,
@@ -13208,9 +17999,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 45,
-          "snack_bread": 129,
-          "loaf_bread": 22
+          "sandwich": 26,
+          "snack_bread": 38,
+          "loaf_bread": 16
         },
         "sales": {
           "sandwich": 0,
@@ -13219,8 +18010,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 45,
-          "snack_bread": 129
+          "sandwich": 26,
+          "snack_bread": 38
         },
         "unmet": {
           "sandwich": 0,
@@ -13228,14 +18019,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 22,
+        "leftover_loaf": 16,
         "revenue": 0,
-        "baking_cost": 339495,
-        "daily_profit": -339495,
-        "reward": -3.39495,
-        "cum_profit": 18320,
-        "waste_rate": 99.3,
-        "stockout_rate": 38.0,
+        "baking_cost": 152990,
+        "daily_profit": -152990,
+        "reward": -1.5299,
+        "cum_profit": -140960,
+        "waste_rate": 104.2,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 15,
@@ -13379,9 +18170,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 8,
-          "snack_bread": 17,
-          "loaf_bread": 42
+          "sandwich": 59,
+          "snack_bread": 11,
+          "loaf_bread": 17
         },
         "sales": {
           "sandwich": 0,
@@ -13390,8 +18181,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 8,
-          "snack_bread": 17
+          "sandwich": 59,
+          "snack_bread": 11
         },
         "unmet": {
           "sandwich": 0,
@@ -13399,14 +18190,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 42,
+        "leftover_loaf": 17,
         "revenue": 0,
-        "baking_cost": 115310,
-        "daily_profit": -115310,
-        "reward": -1.1531,
-        "cum_profit": -96990,
-        "waste_rate": 103.6,
-        "stockout_rate": 38.0,
+        "baking_cost": 215255,
+        "daily_profit": -215255,
+        "reward": -2.15255,
+        "cum_profit": -356215,
+        "waste_rate": 110.7,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 16,
@@ -13550,9 +18341,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 16,
-          "snack_bread": 24,
-          "loaf_bread": 17
+          "sandwich": 55,
+          "snack_bread": 125,
+          "loaf_bread": 15
         },
         "sales": {
           "sandwich": 0,
@@ -13561,8 +18352,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 16,
-          "snack_bread": 24
+          "sandwich": 55,
+          "snack_bread": 125
         },
         "unmet": {
           "sandwich": 0,
@@ -13570,14 +18361,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 17,
+        "leftover_loaf": 15,
         "revenue": 0,
-        "baking_cost": 106770,
-        "daily_profit": -106770,
-        "reward": -1.0677,
-        "cum_profit": -203760,
-        "waste_rate": 107.7,
-        "stockout_rate": 38.0,
+        "baking_cost": 351875,
+        "daily_profit": -351875,
+        "reward": -3.51875,
+        "cum_profit": -708090,
+        "waste_rate": 121.4,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 14,
@@ -13721,9 +18512,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 39,
-          "snack_bread": 159,
-          "loaf_bread": 27
+          "sandwich": 24,
+          "snack_bread": 67,
+          "loaf_bread": 40
         },
         "sales": {
           "sandwich": 0,
@@ -13732,8 +18523,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 39,
-          "snack_bread": 159
+          "sandwich": 24,
+          "snack_bread": 67
         },
         "unmet": {
           "sandwich": 0,
@@ -13741,14 +18532,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 27,
+        "leftover_loaf": 40,
         "revenue": 0,
-        "baking_cost": 370095,
-        "daily_profit": -370095,
-        "reward": -3.70095,
-        "cum_profit": -573855,
-        "waste_rate": 122.1,
-        "stockout_rate": 38.0,
+        "baking_cost": 225310,
+        "daily_profit": -225310,
+        "reward": -2.2531,
+        "cum_profit": -933400,
+        "waste_rate": 128.7,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 3,
@@ -13892,9 +18683,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 49,
-          "snack_bread": 90,
-          "loaf_bread": 10
+          "sandwich": 44,
+          "snack_bread": 132,
+          "loaf_bread": 45
         },
         "sales": {
           "sandwich": 0,
@@ -13903,8 +18694,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 49,
-          "snack_bread": 90
+          "sandwich": 44,
+          "snack_bread": 132
         },
         "unmet": {
           "sandwich": 0,
@@ -13912,14 +18703,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 10,
+        "leftover_loaf": 45,
         "revenue": 0,
-        "baking_cost": 279525,
-        "daily_profit": -279525,
-        "reward": -2.79525,
-        "cum_profit": -853380,
-        "waste_rate": 133.0,
-        "stockout_rate": 38.0,
+        "baking_cost": 378510,
+        "daily_profit": -378510,
+        "reward": -3.7851,
+        "cum_profit": -1311910,
+        "waste_rate": 141.4,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 3,
@@ -14063,9 +18854,9 @@
         "is_bad_weather": 1,
         "is_event": 1,
         "action": {
-          "sandwich": 37,
-          "snack_bread": 45,
-          "loaf_bread": 4
+          "sandwich": 33,
+          "snack_bread": 122,
+          "loaf_bread": 30
         },
         "sales": {
           "sandwich": 0,
@@ -14074,8 +18865,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 37,
-          "snack_bread": 45
+          "sandwich": 33,
+          "snack_bread": 122
         },
         "unmet": {
           "sandwich": 0,
@@ -14083,14 +18874,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 4,
+        "leftover_loaf": 30,
         "revenue": 0,
-        "baking_cost": 174675,
-        "daily_profit": -174675,
-        "reward": -1.74675,
-        "cum_profit": -1028055,
-        "waste_rate": 139.9,
-        "stockout_rate": 38.0,
+        "baking_cost": 308285,
+        "daily_profit": -308285,
+        "reward": -3.08285,
+        "cum_profit": -1620195,
+        "waste_rate": 151.9,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 24,
@@ -14234,8 +19025,8 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 19,
-          "snack_bread": 89,
+          "sandwich": 50,
+          "snack_bread": 33,
           "loaf_bread": 32
         },
         "sales": {
@@ -14245,8 +19036,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 19,
-          "snack_bread": 89
+          "sandwich": 50,
+          "snack_bread": 33
         },
         "unmet": {
           "sandwich": 0,
@@ -14256,12 +19047,12 @@
         "customer_trust": 0,
         "leftover_loaf": 32,
         "revenue": 0,
-        "baking_cost": 226745,
-        "daily_profit": -226745,
-        "reward": -2.26745,
-        "cum_profit": -1254800,
-        "waste_rate": 149.7,
-        "stockout_rate": 38.0,
+        "baking_cost": 242940,
+        "daily_profit": -242940,
+        "reward": -2.4294,
+        "cum_profit": -1863135,
+        "waste_rate": 160.7,
+        "stockout_rate": 24.0,
         "customer_events": [
           {
             "id": 22,

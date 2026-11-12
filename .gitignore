@@ -43,9 +43,11 @@ desktop.ini
 .idea/
 .gemini/
 
-# 추적 유지 명시: 가상 데이터 및 재생/로그 파일
+# 추적 유지 명시: 가상 데이터 및 재생/로그 파일, 학습 모델
 !results/logs/
 !results/screenshots/
+!results/models/
+!results/models/*.zip
 !public/data/
 !data/personas.csv
 !data/customer_traits.csv

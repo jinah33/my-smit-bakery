@@ -138,6 +138,7 @@
       <div class="dropdown-group">
         <select id="selPolicy" onchange="switchPolicy(this.value)">
           <option value="owner_heuristic">내가 정한 규칙 (사장님 노하우)</option>
+          <option value="rl_v1">🤖 학습된 AI 매니저 (PPO v1)</option>
           <option value="max_action">매일 최대로 행동 (최대 생산)</option>
           <option value="random_action">무작위 행동 (균등 무작위)</option>
           <option value="do_nothing">아무것도 안 함 (0개 생산)</option>
@@ -260,6 +261,7 @@
       dayProgress = 0.0;
       const polNames = {
         "owner_heuristic": "내가 정한 규칙 (사장님 노하우)",
+        "rl_v1": "🤖 학습된 AI 매니저 (PPO v1)",
         "max_action": "매일 최대로 행동 (최대 생산)",
         "random_action": "무작위 행동 (균등 무작위)",
         "do_nothing": "아무것도 안 함 (0개 생산)"
@@ -327,6 +329,9 @@
       if (currentPolicy === "owner_heuristic") {
         banner.className = "comparison-banner comp-better";
         banner.innerText = "★ 기준 규칙 (사장님 노하우 1위)";
+      } else if (currentPolicy === "rl_v1") {
+        banner.className = "comparison-banner comp-better";
+        banner.innerText = "🤖 PPO v1: 무모한 과잉 폐기 방어 학습";
       } else if (currentPolicy === "max_action") {
         banner.className = "comparison-banner comp-worse";
         banner.innerText = "과잉 폐기 패널티로 적자 및 신뢰도 파산";
