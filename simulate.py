@@ -386,20 +386,49 @@ def export_playback_json(env):
                 else:
                     wanted = "loaf_bread" if random.random() < 0.5 else "snack_bread"
 
-                # 결과 판정
-                if wanted == "sandwich":
-                    res = "success" if s_info["unmet_sandwich"] == 0 else ("substitute" if random.random() < 0.3 else "unmet")
-                elif wanted == "loaf_bread":
-                    res = "success" if s_info["unmet_fresh_loaf"] == 0 else ("substitute" if random.random() < 0.2 else "unmet")
-                else:
-                    res = "success" if s_info["unmet_snack"] == 0 else "unmet"
+            # 빵 품절 시점 비율 계산 (당일 판매량이 생산량에 도달한 시점)
+            act_sw = baked_sw
+            act_snack = baked_snack
+            act_loaf = baked_loaf
 
-                if res == "success":
-                    msg = "맛있는 빵 샀어요!"
-                elif res == "substitute":
-                    msg = "원래 빵 없어서 간식빵으로!"
+            # 손님 14명 방문 시뮬레이션 (시간 순서대로 방문)
+            for v_idx, cv in enumerate(sampled_visitors):
+                # 출발지 결정
+                origin = "office" if cv["category"] == "직장인" else "apartment"
+                
+                # 주문 종류
+                if origin == "office":
+                    wanted = "sandwich" if random.random() < 0.6 else "snack_bread"
                 else:
-                    msg = "빵이 다 떨어졌네..."
+                    wanted = "loaf_bread" if random.random() < 0.5 else "snack_bread"
+
+                # 시간 순서(v_idx: 0~13)에 따라 재고 소진 여부 판정
+                # 손님 14명 중 v_idx 시점까지의 누적 방문 비율
+                visit_progress = (v_idx + 1) / len(sampled_visitors)
+                
+                # 해당 메뉴가 당일 품절되었는지 여부
+                if wanted == "sandwich":
+                    has_stockout = s_info["unmet_sandwich"] > 0
+                    stockout_point = (s_info["sales_sandwich"] / max(1, act_sw)) if act_sw > 0 else 0.0
+                elif wanted == "loaf_bread":
+                    has_stockout = s_info["unmet_fresh_loaf"] > 0
+                    stockout_point = (s_info["sales_fresh_loaf"] / max(1, act_loaf)) if act_loaf > 0 else 0.0
+                else:
+                    has_stockout = s_info["unmet_snack"] > 0
+                    stockout_point = (s_info["sales_snack"] / max(1, act_snack)) if act_snack > 0 else 0.0
+
+                # 재고가 아직 남아있는 시간대이거나 품절이 안 난 날이면 성공!
+                if not has_stockout or (visit_progress <= stockout_point and act_sw + act_snack + act_loaf > 0):
+                    res = "success"
+                    msg = "맛있는 빵 샀어요!"
+                else:
+                    # 품절 시점에 방문한 손님
+                    if random.random() < 0.35 and (act_snack > 0):
+                        res = "substitute"
+                        msg = "원래 빵 없어서 간식빵으로!"
+                    else:
+                        res = "unmet"
+                        msg = "원하던 빵이 품절이네요..."
 
                 cust_events.append({
                     "id": cv["id"],

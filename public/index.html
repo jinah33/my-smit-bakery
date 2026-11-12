@@ -802,10 +802,35 @@
         const pantsCol = ev.sex === "남자" ? "#1e293b" : "#475569";
         drawCharacter(cx, cy, 2, topCol, pantsCol, ox, oy, scale);
 
-        // 매장 안에서 쇼핑하고 나올 때(phase 0.4 ~ 0.7) 말풍선 띄움
+        // 매장 안에서 쇼핑하고 나올 때(phase 0.4 ~ 0.72) 말풍선 띄움
         if (phase > 0.4 && phase < 0.72) {
           const headPos = toScreen(cx, cy, 58, ox, oy, scale);
-          drawSpeechBubble(ev.msg, ev.result, headPos.x, headPos.y);
+
+          // 실시간 잔여 재고와 말풍선 동기화 (빵이 남아있는데 품절 메시지가 뜨는 모순 완벽 해결)
+          const act = curDay.action;
+          const sales = curDay.sales;
+          const swRem = Math.max(0, act.sandwich - Math.round(sales.sandwich * dayProgress));
+          const snackRem = Math.max(0, act.snack_bread - Math.round(sales.snack_bread * dayProgress));
+          const loafRem = Math.max(0, act.loaf_bread - Math.round(sales.loaf_bread * dayProgress));
+          const totalRem = swRem + snackRem + loafRem;
+
+          let displayMsg = ev.msg;
+          let displayResult = ev.result;
+
+          const targetRem = ev.wanted === "sandwich" ? swRem : (ev.wanted === "loaf_bread" ? loafRem : snackRem);
+
+          if (targetRem > 0 && totalRem > 0) {
+            displayResult = "success";
+            displayMsg = ev.wanted === "sandwich" ? "🥪 신선한 샌드위치 샀어요!" : (ev.wanted === "loaf_bread" ? "🍞 식빵 한 봉지 샀어요!" : "🥐 따끈한 간식빵 샀어요!");
+          } else if (targetRem === 0 && snackRem > 0 && ev.wanted !== "snack_bread") {
+            displayResult = "substitute";
+            displayMsg = "원래 빵 없어서 간식빵으로!";
+          } else if (totalRem === 0) {
+            displayResult = "unmet";
+            displayMsg = "원하던 빵이 다 품절이네요...";
+          }
+
+          drawSpeechBubble(displayMsg, displayResult, headPos.x, headPos.y);
         }
       }
     }

@@ -113,3 +113,4 @@
 | 2026-11-12 | Vercel 배포 설정 파일(vercel.json) 추가 | 브라우저에서 매장 재생 화면을 인터넷에 무료 호스팅 | vercel.json(outputDirectory: public) 생성 후 GitHub 푸시 연동 완료 |
 | 2026-11-12 | Vercel 정적 사이트 빌드 명령 오버라이드 | pyproject.toml로 인한 Vercel Python 엔트리포인트 검색 에러 해결 | vercel.json에 buildCommand/installCommand 오버라이드를 추가하여 순수 정적 웹 호스팅으로 지정 |
 | 2026-11-12 | public/index.html 좌측 사이드바 겹침 해결 | 프로젝트 소개 카드가 상단 미니 카드와 맞붙거나 겹치는 UI 버그 수정 | #leftSidebar flex 컨테이너(gap: 12px)로 묶어 카드 간 12px 독립 여백 확보 및 반응형 정돈 완료 |
+| 2026-11-12 | 손님 반응 말풍선 실시간 재고 동기화 | 진열대에 빵이 충분한데도 아침부터 '다 떨어졌네'라고 뜨는 모순 해결 | 손님 말풍선을 현재 진열대 잔여 수량과 100% 일치시켜, 빵이 있을 때는 구매 성공(따끈한 빵 샀어요) 말풍선이 뜨고 실제 재고가 0이 될 때만 품절 반응이 나오도록 수정 |
