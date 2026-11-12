@@ -61,7 +61,7 @@
         "revenue": 682000,
         "baking_cost": 239200,
         "daily_profit": 442800,
-        "reward": 442800.0,
+        "reward": 4.428,
         "cum_profit": 442800,
         "waste_rate": 0.0,
         "stockout_rate": 39.5,
@@ -232,7 +232,7 @@
         "revenue": 992000,
         "baking_cost": 372900,
         "daily_profit": 619100,
-        "reward": 619100.0,
+        "reward": 6.191,
         "cum_profit": 1061900,
         "waste_rate": 0.0,
         "stockout_rate": 26.5,
@@ -403,7 +403,7 @@
         "revenue": 711500,
         "baking_cost": 283000,
         "daily_profit": 428500,
-        "reward": 428500.0,
+        "reward": 4.285,
         "cum_profit": 1490400,
         "waste_rate": 1.0,
         "stockout_rate": 20.5,
@@ -574,7 +574,7 @@
         "revenue": 682000,
         "baking_cost": 239200,
         "daily_profit": 442800,
-        "reward": 442800.0,
+        "reward": 4.428,
         "cum_profit": 1933200,
         "waste_rate": 0.8,
         "stockout_rate": 22.2,
@@ -745,7 +745,7 @@
         "revenue": 541500,
         "baking_cost": 192275,
         "daily_profit": 349225,
-        "reward": 349225.0,
+        "reward": 3.49225,
         "cum_profit": 2282425,
         "waste_rate": 0.8,
         "stockout_rate": 24.8,
@@ -916,7 +916,7 @@
         "revenue": 555500,
         "baking_cost": 226400,
         "daily_profit": 329100,
-        "reward": 329100.0,
+        "reward": 3.291,
         "cum_profit": 2611525,
         "waste_rate": 1.4,
         "stockout_rate": 22.3,
@@ -1087,7 +1087,7 @@
         "revenue": 478650,
         "baking_cost": 226400,
         "daily_profit": 252250,
-        "reward": 252250.0,
+        "reward": 2.5225,
         "cum_profit": 2863775,
         "waste_rate": 2.5,
         "stockout_rate": 20.5,
@@ -1258,7 +1258,7 @@
         "revenue": 744500,
         "baking_cost": 283000,
         "daily_profit": 461500,
-        "reward": 461500.0,
+        "reward": 4.615,
         "cum_profit": 3325275,
         "waste_rate": 2.1,
         "stockout_rate": 18.8,
@@ -1429,7 +1429,7 @@
         "revenue": 549200,
         "baking_cost": 226400,
         "daily_profit": 322800,
-        "reward": 322800.0,
+        "reward": 3.228,
         "cum_profit": 3648075,
         "waste_rate": 2.2,
         "stockout_rate": 17.4,
@@ -1600,7 +1600,7 @@
         "revenue": 537350,
         "baking_cost": 226400,
         "daily_profit": 310950,
-        "reward": 310950.0,
+        "reward": 3.1095,
         "cum_profit": 3959025,
         "waste_rate": 2.4,
         "stockout_rate": 16.2,
@@ -1771,7 +1771,7 @@
         "revenue": 701250,
         "baking_cost": 239200,
         "daily_profit": 462050,
-        "reward": 462050.0,
+        "reward": 4.6205,
         "cum_profit": 4421075,
         "waste_rate": 2.2,
         "stockout_rate": 17.9,
@@ -1942,7 +1942,7 @@
         "revenue": 682000,
         "baking_cost": 239200,
         "daily_profit": 442800,
-        "reward": 442800.0,
+        "reward": 4.428,
         "cum_profit": 4863875,
         "waste_rate": 2.0,
         "stockout_rate": 18.8,
@@ -2113,7 +2113,7 @@
         "revenue": 555300,
         "baking_cost": 283000,
         "daily_profit": 272300,
-        "reward": 272300.0,
+        "reward": 2.723,
         "cum_profit": 5136175,
         "waste_rate": 3.0,
         "stockout_rate": 17.8,
@@ -2284,7 +2284,7 @@
         "revenue": 673650,
         "baking_cost": 283000,
         "daily_profit": 390650,
-        "reward": 390650.0,
+        "reward": 3.9065,
         "cum_profit": 5526825,
         "waste_rate": 3.1,
         "stockout_rate": 16.7,
@@ -2455,7 +2455,7 @@
         "revenue": 646300,
         "baking_cost": 283000,
         "daily_profit": 363300,
-        "reward": 363300.0,
+        "reward": 3.633,
         "cum_profit": 5890125,
         "waste_rate": 3.3,
         "stockout_rate": 15.8,
@@ -2626,7 +2626,7 @@
         "revenue": 703000,
         "baking_cost": 283000,
         "daily_profit": 420000,
-        "reward": 420000.0,
+        "reward": 4.2,
         "cum_profit": 6310125,
         "waste_rate": 3.2,
         "stockout_rate": 15.0,
@@ -2797,7 +2797,7 @@
         "revenue": 705000,
         "baking_cost": 283000,
         "daily_profit": 422000,
-        "reward": 422000.0,
+        "reward": 4.22,
         "cum_profit": 6732125,
         "waste_rate": 3.0,
         "stockout_rate": 14.3,
@@ -2968,7 +2968,7 @@
         "revenue": 921750,
         "baking_cost": 314475,
         "daily_profit": 607275,
-        "reward": 607275.0,
+        "reward": 6.07275,
         "cum_profit": 7339400,
         "waste_rate": 2.8,
         "stockout_rate": 14.7,
@@ -3139,7 +3139,7 @@
         "revenue": 682000,
         "baking_cost": 239200,
         "daily_profit": 442800,
-        "reward": 442800.0,
+        "reward": 4.428,
         "cum_profit": 7782200,
         "waste_rate": 2.6,
         "stockout_rate": 14.8,
@@ -3310,7 +3310,7 @@
         "revenue": 673900,
         "baking_cost": 283000,
         "daily_profit": 390900,
-        "reward": 390900.0,
+        "reward": 3.909,
         "cum_profit": 8173100,
         "waste_rate": 2.8,
         "stockout_rate": 14.2,
@@ -3481,7 +3481,7 @@
         "revenue": 661100,
         "baking_cost": 283000,
         "daily_profit": 378100,
-        "reward": 378100.0,
+        "reward": 3.781,
         "cum_profit": 8551200,
         "waste_rate": 2.9,
         "stockout_rate": 13.6,
@@ -3652,7 +3652,7 @@
         "revenue": 894000,
         "baking_cost": 372900,
         "daily_profit": 521100,
-        "reward": 521100.0,
+        "reward": 5.211,
         "cum_profit": 9072300,
         "waste_rate": 3.1,
         "stockout_rate": 13.2,
@@ -3823,7 +3823,7 @@
         "revenue": 660100,
         "baking_cost": 283000,
         "daily_profit": 377100,
-        "reward": 377100.0,
+        "reward": 3.771,
         "cum_profit": 9449400,
         "waste_rate": 3.2,
         "stockout_rate": 12.7,
@@ -3994,7 +3994,7 @@
         "revenue": 664400,
         "baking_cost": 283000,
         "daily_profit": 381400,
-        "reward": 381400.0,
+        "reward": 3.814,
         "cum_profit": 9830800,
         "waste_rate": 3.3,
         "stockout_rate": 12.3,
@@ -4165,7 +4165,7 @@
         "revenue": 705750,
         "baking_cost": 239200,
         "daily_profit": 466550,
-        "reward": 466550.0,
+        "reward": 4.6655,
         "cum_profit": 10297350,
         "waste_rate": 3.1,
         "stockout_rate": 12.7,
@@ -4336,7 +4336,7 @@
         "revenue": 682000,
         "baking_cost": 239200,
         "daily_profit": 442800,
-        "reward": 442800.0,
+        "reward": 4.428,
         "cum_profit": 10740150,
         "waste_rate": 3.0,
         "stockout_rate": 13.5,
@@ -4507,7 +4507,7 @@
         "revenue": 548000,
         "baking_cost": 192275,
         "daily_profit": 355725,
-        "reward": 355725.0,
+        "reward": 3.55725,
         "cum_profit": 11095875,
         "waste_rate": 2.9,
         "stockout_rate": 13.5,
@@ -4678,7 +4678,7 @@
         "revenue": 891500,
         "baking_cost": 314475,
         "daily_profit": 577025,
-        "reward": 577025.0,
+        "reward": 5.77025,
         "cum_profit": 11672900,
         "waste_rate": 2.8,
         "stockout_rate": 13.5,
@@ -4851,7 +4851,7 @@
         "revenue": 1036900,
         "baking_cost": 524000,
         "daily_profit": 512900,
-        "reward": 512900.0,
+        "reward": 5.129,
         "cum_profit": 512900,
         "waste_rate": 24.1,
         "stockout_rate": 3.3,
@@ -5022,7 +5022,7 @@
         "revenue": 1138100,
         "baking_cost": 524000,
         "daily_profit": 614100,
-        "reward": 614100.0,
+        "reward": 6.141,
         "cum_profit": 1127000,
         "waste_rate": 15.8,
         "stockout_rate": 1.6,
@@ -5193,7 +5193,7 @@
         "revenue": 723800,
         "baking_cost": 524000,
         "daily_profit": 199800,
-        "reward": 199800.0,
+        "reward": 1.998,
         "cum_profit": 1326800,
         "waste_rate": 23.6,
         "stockout_rate": 1.3,
@@ -5364,7 +5364,7 @@
         "revenue": 852800,
         "baking_cost": 524000,
         "daily_profit": 328800,
-        "reward": 328800.0,
+        "reward": 3.288,
         "cum_profit": 1655600,
         "waste_rate": 26.7,
         "stockout_rate": 1.0,
@@ -5535,7 +5535,7 @@
         "revenue": 751800,
         "baking_cost": 524000,
         "daily_profit": 227800,
-        "reward": 227800.0,
+        "reward": 2.278,
         "cum_profit": 1883400,
         "waste_rate": 30.8,
         "stockout_rate": 0.8,
@@ -5706,7 +5706,7 @@
         "revenue": 541100,
         "baking_cost": 524000,
         "daily_profit": 17100,
-        "reward": 17100.0,
+        "reward": 0.171,
         "cum_profit": 1900500,
         "waste_rate": 36.5,
         "stockout_rate": 0.7,
@@ -5877,7 +5877,7 @@
         "revenue": 444250,
         "baking_cost": 524000,
         "daily_profit": -79750,
-        "reward": -79750.0,
+        "reward": -0.7975,
         "cum_profit": 1820750,
         "waste_rate": 43.1,
         "stockout_rate": 0.7,
@@ -6048,7 +6048,7 @@
         "revenue": 567600,
         "baking_cost": 524000,
         "daily_profit": 43600,
-        "reward": 43600.0,
+        "reward": 0.436,
         "cum_profit": 1864350,
         "waste_rate": 46.5,
         "stockout_rate": 0.6,
@@ -6219,7 +6219,7 @@
         "revenue": 363300,
         "baking_cost": 524000,
         "daily_profit": -160700,
-        "reward": -160700.0,
+        "reward": -1.607,
         "cum_profit": 1703650,
         "waste_rate": 53.1,
         "stockout_rate": 0.6,
@@ -6390,7 +6390,7 @@
         "revenue": 322600,
         "baking_cost": 524000,
         "daily_profit": -201400,
-        "reward": -201400.0,
+        "reward": -2.014,
         "cum_profit": 1502250,
         "waste_rate": 60.1,
         "stockout_rate": 0.5,
@@ -6561,7 +6561,7 @@
         "revenue": 512400,
         "baking_cost": 524000,
         "daily_profit": -11600,
-        "reward": -11600.0,
+        "reward": -0.116,
         "cum_profit": 1490650,
         "waste_rate": 63.1,
         "stockout_rate": 0.5,
@@ -6732,7 +6732,7 @@
         "revenue": 457500,
         "baking_cost": 524000,
         "daily_profit": -66500,
-        "reward": -66500.0,
+        "reward": -0.665,
         "cum_profit": 1424150,
         "waste_rate": 66.7,
         "stockout_rate": 0.5,
@@ -6903,7 +6903,7 @@
         "revenue": 15800,
         "baking_cost": 524000,
         "daily_profit": -508200,
-        "reward": -508200.0,
+        "reward": -5.082,
         "cum_profit": 915950,
         "waste_rate": 78.2,
         "stockout_rate": 0.5,
@@ -7074,7 +7074,7 @@
         "revenue": 9300,
         "baking_cost": 524000,
         "daily_profit": -514700,
-        "reward": -514700.0,
+        "reward": -5.147,
         "cum_profit": 401250,
         "waste_rate": 90.3,
         "stockout_rate": 0.5,
@@ -7245,7 +7245,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -122750,
         "waste_rate": 103.0,
         "stockout_rate": 0.5,
@@ -7416,7 +7416,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -646750,
         "waste_rate": 116.3,
         "stockout_rate": 0.5,
@@ -7587,7 +7587,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -1170750,
         "waste_rate": 130.2,
         "stockout_rate": 0.5,
@@ -7758,7 +7758,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -1694750,
         "waste_rate": 144.6,
         "stockout_rate": 0.5,
@@ -7929,7 +7929,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -2218750,
         "waste_rate": 159.7,
         "stockout_rate": 0.5,
@@ -8100,7 +8100,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -2742750,
         "waste_rate": 175.5,
         "stockout_rate": 0.5,
@@ -8271,7 +8271,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -3266750,
         "waste_rate": 192.0,
         "stockout_rate": 0.5,
@@ -8442,7 +8442,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -3790750,
         "waste_rate": 209.3,
         "stockout_rate": 0.5,
@@ -8613,7 +8613,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -4314750,
         "waste_rate": 227.4,
         "stockout_rate": 0.5,
@@ -8784,7 +8784,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -4838750,
         "waste_rate": 246.5,
         "stockout_rate": 0.5,
@@ -8955,7 +8955,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -5362750,
         "waste_rate": 266.5,
         "stockout_rate": 0.5,
@@ -9126,7 +9126,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -5886750,
         "waste_rate": 287.6,
         "stockout_rate": 0.5,
@@ -9297,7 +9297,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -6410750,
         "waste_rate": 309.8,
         "stockout_rate": 0.5,
@@ -9468,7 +9468,7 @@
         "revenue": 0,
         "baking_cost": 524000,
         "daily_profit": -524000,
-        "reward": -524000.0,
+        "reward": -5.24,
         "cum_profit": -6934750,
         "waste_rate": 333.2,
         "stockout_rate": 0.5,
@@ -9618,13 +9618,13 @@
         "is_event": 1,
         "action": {
           "sandwich": 55,
-          "snack_bread": 41,
-          "loaf_bread": 50
+          "snack_bread": 43,
+          "loaf_bread": 10
         },
         "sales": {
           "sandwich": 19,
-          "snack_bread": 41,
-          "loaf_bread": 50,
+          "snack_bread": 43,
+          "loaf_bread": 10,
           "discount_loaf": 0
         },
         "waste": {
@@ -9633,18 +9633,18 @@
         },
         "unmet": {
           "sandwich": 0,
-          "snack_bread": 127,
-          "loaf_bread": 8
+          "snack_bread": 133,
+          "loaf_bread": 48
         },
         "customer_trust": 95,
         "leftover_loaf": 0,
-        "revenue": 554300,
-        "baking_cost": 297905,
-        "daily_profit": 256395,
-        "reward": 256395.0,
-        "cum_profit": 256395,
-        "waste_rate": 29.1,
-        "stockout_rate": 55.6,
+        "revenue": 341900,
+        "baking_cost": 234565,
+        "daily_profit": 107335,
+        "reward": 1.07335,
+        "cum_profit": 107335,
+        "waste_rate": 49.5,
+        "stockout_rate": 74.5,
         "customer_events": [
           {
             "id": 21,
@@ -9788,34 +9788,34 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 9,
-          "snack_bread": 61,
-          "loaf_bread": 12
+          "sandwich": 43,
+          "snack_bread": 179,
+          "loaf_bread": 15
         },
         "sales": {
-          "sandwich": 9,
-          "snack_bread": 61,
-          "loaf_bread": 12,
+          "sandwich": 43,
+          "snack_bread": 173,
+          "loaf_bread": 15,
           "discount_loaf": 0
         },
         "waste": {
           "sandwich": 0,
-          "snack_bread": 0
+          "snack_bread": 6
         },
         "unmet": {
-          "sandwich": 49,
-          "snack_bread": 123,
-          "loaf_bread": 11
+          "sandwich": 15,
+          "snack_bread": 0,
+          "loaf_bread": 8
         },
         "customer_trust": 90,
         "leftover_loaf": 0,
-        "revenue": 356300,
-        "baking_cost": 127255,
-        "daily_profit": 229045,
-        "reward": 229045.0,
-        "cum_profit": 485440,
-        "waste_rate": 17.8,
-        "stockout_rate": 64.8,
+        "revenue": 1019400,
+        "baking_cost": 388595,
+        "daily_profit": 630805,
+        "reward": 6.30805,
+        "cum_profit": 738140,
+        "waste_rate": 13.3,
+        "stockout_rate": 41.5,
         "customer_events": [
           {
             "id": 2,
@@ -9832,8 +9832,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 23,
@@ -9859,8 +9859,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 15,
@@ -9868,8 +9868,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 12,
@@ -9886,8 +9886,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 4,
@@ -9931,8 +9931,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 17,
@@ -9940,8 +9940,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           }
         ]
       },
@@ -9959,34 +9959,34 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 12,
-          "snack_bread": 132,
-          "loaf_bread": 22
+          "sandwich": 9,
+          "snack_bread": 12,
+          "loaf_bread": 9
         },
         "sales": {
-          "sandwich": 12,
-          "snack_bread": 103,
-          "loaf_bread": 22,
+          "sandwich": 9,
+          "snack_bread": 12,
+          "loaf_bread": 9,
           "discount_loaf": 0
         },
         "waste": {
           "sandwich": 0,
-          "snack_bread": 29
+          "snack_bread": 0
         },
         "unmet": {
-          "sandwich": 25,
-          "snack_bread": 0,
-          "loaf_bread": 0
+          "sandwich": 28,
+          "snack_bread": 94,
+          "loaf_bread": 13
         },
         "customer_trust": 85,
         "leftover_loaf": 0,
-        "revenue": 590400,
-        "baking_cost": 246960,
-        "daily_profit": 343440,
-        "reward": 343440.0,
-        "cum_profit": 828880,
-        "waste_rate": 14.8,
-        "stockout_rate": 53.2,
+        "revenue": 153600,
+        "baking_cost": 57135,
+        "daily_profit": 96465,
+        "reward": 0.96465,
+        "cum_profit": 834605,
+        "waste_rate": 12.0,
+        "stockout_rate": 52.6,
         "customer_events": [
           {
             "id": 14,
@@ -10003,8 +10003,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 18,
@@ -10012,8 +10012,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 23,
@@ -10030,8 +10030,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 6,
@@ -10048,8 +10048,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 8,
@@ -10057,8 +10057,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 10,
@@ -10093,8 +10093,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 21,
@@ -10130,34 +10130,34 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 57,
-          "snack_bread": 22,
-          "loaf_bread": 11
+          "sandwich": 42,
+          "snack_bread": 171,
+          "loaf_bread": 30
         },
         "sales": {
           "sandwich": 20,
-          "snack_bread": 22,
-          "loaf_bread": 11,
+          "snack_bread": 144,
+          "loaf_bread": 30,
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 37,
-          "snack_bread": 0
+          "sandwich": 22,
+          "snack_bread": 27
         },
         "unmet": {
           "sandwich": 0,
-          "snack_bread": 126,
-          "loaf_bread": 34
+          "snack_bread": 0,
+          "loaf_bread": 15
         },
         "customer_trust": 80,
         "leftover_loaf": 0,
-        "revenue": 274100,
-        "baking_cost": 214135,
-        "daily_profit": 59965,
-        "reward": 59965.0,
-        "cum_profit": 888845,
-        "waste_rate": 22.1,
-        "stockout_rate": 59.1,
+        "revenue": 842200,
+        "baking_cost": 399780,
+        "daily_profit": 442420,
+        "reward": 4.4242,
+        "cum_profit": 1277025,
+        "waste_rate": 14.3,
+        "stockout_rate": 41.6,
         "customer_events": [
           {
             "id": 9,
@@ -10165,8 +10165,8 @@
             "role": "office_worker",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 14,
@@ -10174,8 +10174,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 16,
@@ -10183,8 +10183,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 30,
@@ -10192,8 +10192,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 3,
@@ -10210,8 +10210,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 11,
@@ -10228,8 +10228,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 26,
@@ -10282,8 +10282,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           }
         ]
       },
@@ -10301,34 +10301,34 @@
         "is_bad_weather": 1,
         "is_event": 0,
         "action": {
-          "sandwich": 15,
-          "snack_bread": 45,
-          "loaf_bread": 30
+          "sandwich": 36,
+          "snack_bread": 185,
+          "loaf_bread": 31
         },
         "sales": {
           "sandwich": 11,
-          "snack_bread": 45,
-          "loaf_bread": 30,
+          "snack_bread": 111,
+          "loaf_bread": 31,
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 4,
-          "snack_bread": 0
+          "sandwich": 25,
+          "snack_bread": 74
         },
         "unmet": {
           "sandwich": 0,
-          "snack_bread": 67,
-          "loaf_bread": 8
+          "snack_bread": 0,
+          "loaf_bread": 7
         },
         "customer_trust": 75,
         "leftover_loaf": 0,
-        "revenue": 407500,
-        "baking_cost": 153225,
-        "daily_profit": 254275,
-        "reward": 254275.0,
-        "cum_profit": 1143120,
-        "waste_rate": 18.7,
-        "stockout_rate": 57.2,
+        "revenue": 663800,
+        "baking_cost": 402500,
+        "daily_profit": 261300,
+        "reward": 2.613,
+        "cum_profit": 1538325,
+        "waste_rate": 20.0,
+        "stockout_rate": 35.7,
         "customer_events": [
           {
             "id": 29,
@@ -10354,8 +10354,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 2,
@@ -10372,8 +10372,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 26,
@@ -10381,8 +10381,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 8,
@@ -10390,8 +10390,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 21,
@@ -10399,8 +10399,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 17,
@@ -10417,8 +10417,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 25,
@@ -10472,34 +10472,34 @@
         "is_bad_weather": 1,
         "is_event": 0,
         "action": {
-          "sandwich": 26,
-          "snack_bread": 192,
+          "sandwich": 38,
+          "snack_bread": 5,
           "loaf_bread": 19
         },
         "sales": {
           "sandwich": 26,
-          "snack_bread": 78,
+          "snack_bread": 5,
           "loaf_bread": 15,
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 0,
-          "snack_bread": 114
+          "sandwich": 12,
+          "snack_bread": 0
         },
         "unmet": {
           "sandwich": 0,
-          "snack_bread": 0,
+          "snack_bread": 73,
           "loaf_bread": 0
         },
         "customer_trust": 70,
         "leftover_loaf": 4,
-        "revenue": 547900,
-        "baking_cost": 362760,
-        "daily_profit": 185140,
-        "reward": 185140.0,
-        "cum_profit": 1328260,
-        "waste_rate": 23.8,
-        "stockout_rate": 51.2,
+        "revenue": 270500,
+        "baking_cost": 149150,
+        "daily_profit": 121350,
+        "reward": 1.2135,
+        "cum_profit": 1659675,
+        "waste_rate": 20.2,
+        "stockout_rate": 38.4,
         "customer_events": [
           {
             "id": 12,
@@ -10507,8 +10507,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 3,
@@ -10525,8 +10525,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 18,
@@ -10534,8 +10534,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 15,
@@ -10543,8 +10543,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 19,
@@ -10561,8 +10561,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 9,
@@ -10643,34 +10643,34 @@
         "is_bad_weather": 1,
         "is_event": 0,
         "action": {
-          "sandwich": 18,
-          "snack_bread": 40,
-          "loaf_bread": 8
+          "sandwich": 26,
+          "snack_bread": 1,
+          "loaf_bread": 39
         },
         "sales": {
-          "sandwich": 18,
-          "snack_bread": 40,
+          "sandwich": 21,
+          "snack_bread": 1,
           "loaf_bread": 4,
           "discount_loaf": 4
         },
         "waste": {
-          "sandwich": 0,
+          "sandwich": 5,
           "snack_bread": 0
         },
         "unmet": {
-          "sandwich": 3,
-          "snack_bread": 16,
+          "sandwich": 0,
+          "snack_bread": 54,
           "loaf_bread": 0
         },
         "customer_trust": 65,
-        "leftover_loaf": 4,
-        "revenue": 302000,
-        "baking_cost": 119050,
-        "daily_profit": 182950,
-        "reward": 182950.0,
-        "cum_profit": 1511210,
-        "waste_rate": 21.6,
-        "stockout_rate": 49.4,
+        "leftover_loaf": 35,
+        "revenue": 173300,
+        "baking_cost": 141730,
+        "daily_profit": 31570,
+        "reward": 0.3157,
+        "cum_profit": 1691245,
+        "waste_rate": 20.5,
+        "stockout_rate": 40.4,
         "customer_events": [
           {
             "id": 18,
@@ -10696,17 +10696,17 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 30,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 23,
@@ -10714,8 +10714,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 27,
@@ -10723,8 +10723,8 @@
             "role": "general",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 10,
@@ -10732,17 +10732,17 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 17,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "sandwich",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 7,
@@ -10750,8 +10750,8 @@
             "role": "general",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 14,
@@ -10759,8 +10759,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 6,
@@ -10768,8 +10768,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 28,
@@ -10785,9 +10785,9 @@
             "sex": "남자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "snack_bread",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "wanted": "loaf_bread",
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 16,
@@ -10795,8 +10795,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           }
         ]
       },
@@ -10814,34 +10814,34 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 17,
-          "snack_bread": 42,
-          "loaf_bread": 41
+          "sandwich": 16,
+          "snack_bread": 50,
+          "loaf_bread": 18
         },
         "sales": {
-          "sandwich": 17,
-          "snack_bread": 42,
-          "loaf_bread": 9,
-          "discount_loaf": 4
+          "sandwich": 16,
+          "snack_bread": 50,
+          "loaf_bread": 7,
+          "discount_loaf": 6
         },
         "waste": {
           "sandwich": 0,
           "snack_bread": 0
         },
         "unmet": {
-          "sandwich": 13,
-          "snack_bread": 33,
+          "sandwich": 14,
+          "snack_bread": 25,
           "loaf_bread": 0
         },
         "customer_trust": 60,
-        "leftover_loaf": 32,
-        "revenue": 330600,
-        "baking_cost": 173235,
-        "daily_profit": 157365,
-        "reward": 157365.0,
-        "cum_profit": 1668575,
-        "waste_rate": 19.9,
-        "stockout_rate": 48.7,
+        "leftover_loaf": 11,
+        "revenue": 349000,
+        "baking_cost": 143000,
+        "daily_profit": 206000,
+        "reward": 2.06,
+        "cum_profit": 1897245,
+        "waste_rate": 18.6,
+        "stockout_rate": 40.0,
         "customer_events": [
           {
             "id": 3,
@@ -10985,34 +10985,34 @@
         "is_bad_weather": 1,
         "is_event": 0,
         "action": {
-          "sandwich": 13,
-          "snack_bread": 121,
-          "loaf_bread": 37
+          "sandwich": 40,
+          "snack_bread": 23,
+          "loaf_bread": 13
         },
         "sales": {
-          "sandwich": 13,
-          "snack_bread": 49,
+          "sandwich": 19,
+          "snack_bread": 23,
           "loaf_bread": 3,
           "discount_loaf": 4
         },
         "waste": {
-          "sandwich": 0,
-          "snack_bread": 72
+          "sandwich": 21,
+          "snack_bread": 0
         },
         "unmet": {
-          "sandwich": 6,
-          "snack_bread": 0,
+          "sandwich": 0,
+          "snack_bread": 24,
           "loaf_bread": 0
         },
         "customer_trust": 55,
-        "leftover_loaf": 34,
-        "revenue": 298200,
-        "baking_cost": 260005,
-        "daily_profit": 38195,
-        "reward": 38195.0,
-        "cum_profit": 1706770,
-        "waste_rate": 23.0,
-        "stockout_rate": 46.8,
+        "leftover_loaf": 10,
+        "revenue": 238400,
+        "baking_cost": 169040,
+        "daily_profit": 69360,
+        "reward": 0.6936,
+        "cum_profit": 1966605,
+        "waste_rate": 20.1,
+        "stockout_rate": 39.8,
         "customer_events": [
           {
             "id": 16,
@@ -11020,8 +11020,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 28,
@@ -11029,8 +11029,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 9,
@@ -11047,15 +11047,15 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 21,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
+            "wanted": "sandwich",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11064,7 +11064,7 @@
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "snack_bread",
+            "wanted": "loaf_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11074,33 +11074,33 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 30,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 11,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 3,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "snack_bread",
+            "wanted": "loaf_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11110,24 +11110,24 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 22,
             "sex": "남자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 25,
             "sex": "남자",
             "role": "general",
             "origin": "office",
-            "wanted": "snack_bread",
+            "wanted": "sandwich",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11137,8 +11137,8 @@
             "role": "resident",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           }
         ]
       },
@@ -11156,34 +11156,34 @@
         "is_bad_weather": 1,
         "is_event": 0,
         "action": {
-          "sandwich": 25,
-          "snack_bread": 58,
-          "loaf_bread": 8
+          "sandwich": 3,
+          "snack_bread": 86,
+          "loaf_bread": 17
         },
         "sales": {
-          "sandwich": 19,
-          "snack_bread": 41,
+          "sandwich": 3,
+          "snack_bread": 46,
           "loaf_bread": 4,
           "discount_loaf": 4
         },
         "waste": {
-          "sandwich": 6,
-          "snack_bread": 17
+          "sandwich": 0,
+          "snack_bread": 40
         },
         "unmet": {
-          "sandwich": 0,
+          "sandwich": 16,
           "snack_bread": 0,
           "loaf_bread": 0
         },
         "customer_trust": 50,
-        "leftover_loaf": 4,
-        "revenue": 312300,
-        "baking_cost": 163465,
-        "daily_profit": 148835,
-        "reward": 148835.0,
-        "cum_profit": 1855605,
-        "waste_rate": 22.9,
-        "stockout_rate": 44.7,
+        "leftover_loaf": 13,
+        "revenue": 227300,
+        "baking_cost": 151205,
+        "daily_profit": 76095,
+        "reward": 0.76095,
+        "cum_profit": 2042700,
+        "waste_rate": 21.2,
+        "stockout_rate": 39.1,
         "customer_events": [
           {
             "id": 8,
@@ -11200,15 +11200,15 @@
             "role": "general",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 17,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "sandwich",
+            "wanted": "snack_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11217,16 +11217,16 @@
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 6,
             "sex": "여자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "sandwich",
+            "wanted": "snack_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11235,7 +11235,7 @@
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "snack_bread",
+            "wanted": "loaf_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11244,16 +11244,16 @@
             "sex": "남자",
             "role": "general",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 29,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "sandwich",
+            "wanted": "snack_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11271,7 +11271,7 @@
             "sex": "여자",
             "role": "resident",
             "origin": "office",
-            "wanted": "sandwich",
+            "wanted": "snack_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11280,16 +11280,16 @@
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "wanted": "sandwich",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 15,
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
+            "wanted": "snack_bread",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11308,8 +11308,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           }
         ]
       },
@@ -11327,34 +11327,34 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 12,
-          "snack_bread": 118,
-          "loaf_bread": 2
+          "sandwich": 20,
+          "snack_bread": 51,
+          "loaf_bread": 7
         },
         "sales": {
-          "sandwich": 12,
-          "snack_bread": 88,
-          "loaf_bread": 2,
-          "discount_loaf": 4
+          "sandwich": 13,
+          "snack_bread": 51,
+          "loaf_bread": 7,
+          "discount_loaf": 10
         },
         "waste": {
-          "sandwich": 0,
-          "snack_bread": 30
+          "sandwich": 7,
+          "snack_bread": 0
         },
         "unmet": {
-          "sandwich": 1,
-          "snack_bread": 0,
-          "loaf_bread": 15
+          "sandwich": 0,
+          "snack_bread": 35,
+          "loaf_bread": 4
         },
         "customer_trust": 45,
         "leftover_loaf": 0,
-        "revenue": 434400,
-        "baking_cost": 195340,
-        "daily_profit": 239060,
-        "reward": 239060.0,
-        "cum_profit": 2094665,
-        "waste_rate": 22.0,
-        "stockout_rate": 42.4,
+        "revenue": 344300,
+        "baking_cost": 137880,
+        "daily_profit": 206420,
+        "reward": 2.0642,
+        "cum_profit": 2249120,
+        "waste_rate": 20.2,
+        "stockout_rate": 38.9,
         "customer_events": [
           {
             "id": 9,
@@ -11362,8 +11362,8 @@
             "role": "office_worker",
             "origin": "apartment",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 2,
@@ -11371,8 +11371,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 24,
@@ -11380,8 +11380,8 @@
             "role": "resident",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 17,
@@ -11389,8 +11389,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 16,
@@ -11398,8 +11398,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 12,
@@ -11407,15 +11407,15 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 14,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
+            "wanted": "sandwich",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11424,7 +11424,7 @@
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "snack_bread",
+            "wanted": "sandwich",
             "result": "success",
             "msg": "맛있는 빵 샀어요!"
           },
@@ -11434,8 +11434,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 6,
@@ -11443,8 +11443,8 @@
             "role": "office_worker",
             "origin": "office",
             "wanted": "sandwich",
-            "result": "unmet",
-            "msg": "빵이 다 떨어졌네..."
+            "result": "success",
+            "msg": "맛있는 빵 샀어요!"
           },
           {
             "id": 28,
@@ -11452,24 +11452,24 @@
             "role": "resident",
             "origin": "office",
             "wanted": "snack_bread",
-            "result": "success",
-            "msg": "맛있는 빵 샀어요!"
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 21,
             "sex": "남자",
             "role": "office_worker",
             "origin": "office",
-            "wanted": "sandwich",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           },
           {
             "id": 25,
             "sex": "남자",
             "role": "general",
             "origin": "office",
-            "wanted": "sandwich",
+            "wanted": "snack_bread",
             "result": "unmet",
             "msg": "빵이 다 떨어졌네..."
           },
@@ -11478,9 +11478,9 @@
             "sex": "여자",
             "role": "resident",
             "origin": "apartment",
-            "wanted": "loaf_bread",
-            "result": "substitute",
-            "msg": "원래 빵 없어서 간식빵으로!"
+            "wanted": "snack_bread",
+            "result": "unmet",
+            "msg": "빵이 다 떨어졌네..."
           }
         ]
       },
@@ -11498,9 +11498,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 18,
-          "snack_bread": 26,
-          "loaf_bread": 43
+          "sandwich": 60,
+          "snack_bread": 95,
+          "loaf_bread": 28
         },
         "sales": {
           "sandwich": 0,
@@ -11509,8 +11509,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 18,
-          "snack_bread": 24
+          "sandwich": 60,
+          "snack_bread": 93
         },
         "unmet": {
           "sandwich": 0,
@@ -11518,14 +11518,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 40,
-        "leftover_loaf": 41,
+        "leftover_loaf": 26,
         "revenue": 18600,
-        "baking_cost": 158180,
-        "daily_profit": -139580,
-        "reward": -139580.0,
-        "cum_profit": 1955085,
-        "waste_rate": 25.7,
-        "stockout_rate": 42.3,
+        "baking_cost": 348050,
+        "daily_profit": -329450,
+        "reward": -3.2945,
+        "cum_profit": 1919670,
+        "waste_rate": 31.2,
+        "stockout_rate": 38.8,
         "customer_events": [
           {
             "id": 20,
@@ -11669,9 +11669,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 1,
-          "snack_bread": 176,
-          "loaf_bread": 32
+          "sandwich": 26,
+          "snack_bread": 73,
+          "loaf_bread": 4
         },
         "sales": {
           "sandwich": 0,
@@ -11680,8 +11680,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 1,
-          "snack_bread": 175
+          "sandwich": 26,
+          "snack_bread": 72
         },
         "unmet": {
           "sandwich": 0,
@@ -11689,14 +11689,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 35,
-        "leftover_loaf": 32,
+        "leftover_loaf": 4,
         "revenue": 3800,
-        "baking_cost": 289805,
-        "daily_profit": -286005,
-        "reward": -286005.0,
-        "cum_profit": 1669080,
-        "waste_rate": 35.3,
-        "stockout_rate": 42.3,
+        "baking_cost": 179740,
+        "daily_profit": -175940,
+        "reward": -1.7594,
+        "cum_profit": 1743730,
+        "waste_rate": 37.4,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 30,
@@ -11840,9 +11840,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 40,
-          "snack_bread": 47,
-          "loaf_bread": 0
+          "sandwich": 31,
+          "snack_bread": 87,
+          "loaf_bread": 46
         },
         "sales": {
           "sandwich": 0,
@@ -11851,8 +11851,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 40,
-          "snack_bread": 47
+          "sandwich": 31,
+          "snack_bread": 87
         },
         "unmet": {
           "sandwich": 0,
@@ -11860,14 +11860,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 30,
-        "leftover_loaf": 0,
+        "leftover_loaf": 46,
         "revenue": 0,
-        "baking_cost": 179510,
-        "daily_profit": -179510,
-        "reward": -179510.0,
-        "cum_profit": 1489570,
-        "waste_rate": 42.3,
-        "stockout_rate": 42.3,
+        "baking_cost": 282285,
+        "daily_profit": -282285,
+        "reward": -2.82285,
+        "cum_profit": 1461445,
+        "waste_rate": 46.0,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 3,
@@ -12011,9 +12011,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 17,
-          "snack_bread": 110,
-          "loaf_bread": 15
+          "sandwich": 23,
+          "snack_bread": 161,
+          "loaf_bread": 23
         },
         "sales": {
           "sandwich": 0,
@@ -12022,8 +12022,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 17,
-          "snack_bread": 110
+          "sandwich": 23,
+          "snack_bread": 161
         },
         "unmet": {
           "sandwich": 0,
@@ -12031,14 +12031,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 25,
-        "leftover_loaf": 15,
+        "leftover_loaf": 23,
         "revenue": 0,
-        "baking_cost": 220775,
-        "daily_profit": -220775,
-        "reward": -220775.0,
-        "cum_profit": 1268795,
-        "waste_rate": 50.4,
-        "stockout_rate": 42.3,
+        "baking_cost": 319355,
+        "daily_profit": -319355,
+        "reward": -3.19355,
+        "cum_profit": 1142090,
+        "waste_rate": 57.2,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 28,
@@ -12182,9 +12182,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 12,
-          "snack_bread": 58,
-          "loaf_bread": 39
+          "sandwich": 36,
+          "snack_bread": 145,
+          "loaf_bread": 5
         },
         "sales": {
           "sandwich": 0,
@@ -12193,8 +12193,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 12,
-          "snack_bread": 58
+          "sandwich": 36,
+          "snack_bread": 145
         },
         "unmet": {
           "sandwich": 0,
@@ -12202,14 +12202,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 20,
-        "leftover_loaf": 39,
+        "leftover_loaf": 5,
         "revenue": 0,
-        "baking_cost": 176590,
-        "daily_profit": -176590,
-        "reward": -176590.0,
-        "cum_profit": 1092205,
-        "waste_rate": 56.2,
-        "stockout_rate": 42.3,
+        "baking_cost": 306400,
+        "daily_profit": -306400,
+        "reward": -3.064,
+        "cum_profit": 835690,
+        "waste_rate": 68.6,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 2,
@@ -12353,9 +12353,9 @@
         "is_bad_weather": 0,
         "is_event": 1,
         "action": {
-          "sandwich": 50,
-          "snack_bread": 110,
-          "loaf_bread": 20
+          "sandwich": 42,
+          "snack_bread": 83,
+          "loaf_bread": 36
         },
         "sales": {
           "sandwich": 0,
@@ -12364,8 +12364,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 50,
-          "snack_bread": 110
+          "sandwich": 42,
+          "snack_bread": 83
         },
         "unmet": {
           "sandwich": 0,
@@ -12373,14 +12373,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 15,
-        "leftover_loaf": 20,
+        "leftover_loaf": 36,
         "revenue": 0,
-        "baking_cost": 325550,
-        "daily_profit": -325550,
-        "reward": -325550.0,
-        "cum_profit": 766655,
-        "waste_rate": 68.8,
-        "stockout_rate": 42.3,
+        "baking_cost": 292640,
+        "daily_profit": -292640,
+        "reward": -2.9264,
+        "cum_profit": 543050,
+        "waste_rate": 79.1,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 19,
@@ -12524,9 +12524,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 10,
-          "snack_bread": 55,
-          "loaf_bread": 49
+          "sandwich": 52,
+          "snack_bread": 12,
+          "loaf_bread": 11
         },
         "sales": {
           "sandwich": 0,
@@ -12535,8 +12535,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 10,
-          "snack_bread": 55
+          "sandwich": 52,
+          "snack_bread": 12
         },
         "unmet": {
           "sandwich": 0,
@@ -12544,14 +12544,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 10,
-        "leftover_loaf": 49,
+        "leftover_loaf": 11,
         "revenue": 0,
-        "baking_cost": 183250,
-        "daily_profit": -183250,
-        "reward": -183250.0,
-        "cum_profit": 583405,
-        "waste_rate": 75.5,
-        "stockout_rate": 42.3,
+        "baking_cost": 186210,
+        "daily_profit": -186210,
+        "reward": -1.8621,
+        "cum_profit": 356840,
+        "waste_rate": 86.2,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 8,
@@ -12695,9 +12695,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 40,
-          "snack_bread": 133,
-          "loaf_bread": 28
+          "sandwich": 36,
+          "snack_bread": 89,
+          "loaf_bread": 7
         },
         "sales": {
           "sandwich": 0,
@@ -12706,8 +12706,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 40,
-          "snack_bread": 133
+          "sandwich": 36,
+          "snack_bread": 89
         },
         "unmet": {
           "sandwich": 0,
@@ -12715,14 +12715,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 5,
-        "leftover_loaf": 28,
+        "leftover_loaf": 7,
         "revenue": 0,
-        "baking_cost": 340090,
-        "daily_profit": -340090,
-        "reward": -340090.0,
-        "cum_profit": 243315,
-        "waste_rate": 89.6,
-        "stockout_rate": 42.3,
+        "baking_cost": 235220,
+        "daily_profit": -235220,
+        "reward": -2.3522,
+        "cum_profit": 121620,
+        "waste_rate": 95.3,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 10,
@@ -12866,9 +12866,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 55,
-          "snack_bread": 121,
-          "loaf_bread": 29
+          "sandwich": 27,
+          "snack_bread": 3,
+          "loaf_bread": 10
         },
         "sales": {
           "sandwich": 0,
@@ -12877,8 +12877,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 55,
-          "snack_bread": 121
+          "sandwich": 27,
+          "snack_bread": 3
         },
         "unmet": {
           "sandwich": 0,
@@ -12886,14 +12886,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 29,
+        "leftover_loaf": 10,
         "revenue": 0,
-        "baking_cost": 369655,
-        "daily_profit": -369655,
-        "reward": -369655.0,
-        "cum_profit": -126340,
-        "waste_rate": 105.5,
-        "stockout_rate": 42.3,
+        "baking_cost": 99465,
+        "daily_profit": -99465,
+        "reward": -0.99465,
+        "cum_profit": 22155,
+        "waste_rate": 99.1,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 16,
@@ -13037,9 +13037,9 @@
         "is_bad_weather": 0,
         "is_event": 1,
         "action": {
-          "sandwich": 4,
-          "snack_bread": 97,
-          "loaf_bread": 30
+          "sandwich": 45,
+          "snack_bread": 68,
+          "loaf_bread": 44
         },
         "sales": {
           "sandwich": 0,
@@ -13048,8 +13048,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 4,
-          "snack_bread": 97
+          "sandwich": 45,
+          "snack_bread": 68
         },
         "unmet": {
           "sandwich": 0,
@@ -13057,14 +13057,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 30,
+        "leftover_loaf": 44,
         "revenue": 0,
-        "baking_cost": 190210,
-        "daily_profit": -190210,
-        "reward": -190210.0,
-        "cum_profit": -316550,
-        "waste_rate": 114.2,
-        "stockout_rate": 42.3,
+        "baking_cost": 294665,
+        "daily_profit": -294665,
+        "reward": -2.94665,
+        "cum_profit": -272510,
+        "waste_rate": 111.0,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 30,
@@ -13208,9 +13208,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 50,
-          "snack_bread": 116,
-          "loaf_bread": 33
+          "sandwich": 14,
+          "snack_bread": 60,
+          "loaf_bread": 40
         },
         "sales": {
           "sandwich": 0,
@@ -13219,8 +13219,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 50,
-          "snack_bread": 116
+          "sandwich": 14,
+          "snack_bread": 60
         },
         "unmet": {
           "sandwich": 0,
@@ -13228,14 +13228,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 33,
+        "leftover_loaf": 40,
         "revenue": 0,
-        "baking_cost": 354980,
-        "daily_profit": -354980,
-        "reward": -354980.0,
-        "cum_profit": -671530,
-        "waste_rate": 130.8,
-        "stockout_rate": 42.3,
+        "baking_cost": 186750,
+        "daily_profit": -186750,
+        "reward": -1.8675,
+        "cum_profit": -459260,
+        "waste_rate": 119.0,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 15,
@@ -13379,9 +13379,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 59,
-          "snack_bread": 135,
-          "loaf_bread": 14
+          "sandwich": 41,
+          "snack_bread": 199,
+          "loaf_bread": 21
         },
         "sales": {
           "sandwich": 0,
@@ -13390,8 +13390,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 59,
-          "snack_bread": 135
+          "sandwich": 41,
+          "snack_bread": 199
         },
         "unmet": {
           "sandwich": 0,
@@ -13399,14 +13399,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 14,
+        "leftover_loaf": 21,
         "revenue": 0,
-        "baking_cost": 375225,
-        "daily_profit": -375225,
-        "reward": -375225.0,
-        "cum_profit": -1046755,
-        "waste_rate": 148.5,
-        "stockout_rate": 42.3,
+        "baking_cost": 419245,
+        "daily_profit": -419245,
+        "reward": -4.19245,
+        "cum_profit": -878505,
+        "waste_rate": 136.9,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 16,
@@ -13550,9 +13550,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 57,
-          "snack_bread": 80,
-          "loaf_bread": 36
+          "sandwich": 50,
+          "snack_bread": 74,
+          "loaf_bread": 16
         },
         "sales": {
           "sandwich": 0,
@@ -13561,8 +13561,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 57,
-          "snack_bread": 80
+          "sandwich": 50,
+          "snack_bread": 74
         },
         "unmet": {
           "sandwich": 0,
@@ -13570,14 +13570,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 36,
+        "leftover_loaf": 16,
         "revenue": 0,
-        "baking_cost": 332525,
-        "daily_profit": -332525,
-        "reward": -332525.0,
-        "cum_profit": -1379280,
-        "waste_rate": 165.8,
-        "stockout_rate": 42.3,
+        "baking_cost": 271070,
+        "daily_profit": -271070,
+        "reward": -2.7107,
+        "cum_profit": -1149575,
+        "waste_rate": 148.8,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 14,
@@ -13721,9 +13721,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 46,
-          "snack_bread": 7,
-          "loaf_bread": 24
+          "sandwich": 4,
+          "snack_bread": 162,
+          "loaf_bread": 10
         },
         "sales": {
           "sandwich": 0,
@@ -13732,8 +13732,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 46,
-          "snack_bread": 7
+          "sandwich": 4,
+          "snack_bread": 162
         },
         "unmet": {
           "sandwich": 0,
@@ -13741,14 +13741,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 24,
+        "leftover_loaf": 10,
         "revenue": 0,
-        "baking_cost": 183460,
-        "daily_profit": -183460,
-        "reward": -183460.0,
-        "cum_profit": -1562740,
-        "waste_rate": 176.0,
-        "stockout_rate": 42.3,
+        "baking_cost": 243660,
+        "daily_profit": -243660,
+        "reward": -2.4366,
+        "cum_profit": -1393235,
+        "waste_rate": 159.5,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 3,
@@ -13892,9 +13892,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 41,
-          "snack_bread": 69,
-          "loaf_bread": 44
+          "sandwich": 31,
+          "snack_bread": 84,
+          "loaf_bread": 24
         },
         "sales": {
           "sandwich": 0,
@@ -13903,8 +13903,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 41,
-          "snack_bread": 69
+          "sandwich": 31,
+          "snack_bread": 84
         },
         "unmet": {
           "sandwich": 0,
@@ -13912,14 +13912,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 44,
+        "leftover_loaf": 24,
         "revenue": 0,
-        "baking_cost": 284295,
-        "daily_profit": -284295,
-        "reward": -284295.0,
-        "cum_profit": -1847035,
-        "waste_rate": 193.1,
-        "stockout_rate": 42.3,
+        "baking_cost": 241995,
+        "daily_profit": -241995,
+        "reward": -2.41995,
+        "cum_profit": -1635230,
+        "waste_rate": 171.1,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 3,
@@ -14063,9 +14063,9 @@
         "is_bad_weather": 1,
         "is_event": 1,
         "action": {
-          "sandwich": 40,
-          "snack_bread": 137,
-          "loaf_bread": 7
+          "sandwich": 21,
+          "snack_bread": 0,
+          "loaf_bread": 13
         },
         "sales": {
           "sandwich": 0,
@@ -14074,8 +14074,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 40,
-          "snack_bread": 137
+          "sandwich": 21,
+          "snack_bread": 0
         },
         "unmet": {
           "sandwich": 0,
@@ -14083,14 +14083,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 7,
+        "leftover_loaf": 13,
         "revenue": 0,
-        "baking_cost": 310760,
-        "daily_profit": -310760,
-        "reward": -310760.0,
-        "cum_profit": -2157795,
-        "waste_rate": 209.3,
-        "stockout_rate": 42.3,
+        "baking_cost": 82875,
+        "daily_profit": -82875,
+        "reward": -0.82875,
+        "cum_profit": -1718105,
+        "waste_rate": 175.4,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 24,
@@ -14234,9 +14234,9 @@
         "is_bad_weather": 0,
         "is_event": 0,
         "action": {
-          "sandwich": 18,
-          "snack_bread": 18,
-          "loaf_bread": 20
+          "sandwich": 32,
+          "snack_bread": 193,
+          "loaf_bread": 34
         },
         "sales": {
           "sandwich": 0,
@@ -14245,8 +14245,8 @@
           "discount_loaf": 0
         },
         "waste": {
-          "sandwich": 18,
-          "snack_bread": 18
+          "sandwich": 32,
+          "snack_bread": 193
         },
         "unmet": {
           "sandwich": 0,
@@ -14254,14 +14254,14 @@
           "loaf_bread": 0
         },
         "customer_trust": 0,
-        "leftover_loaf": 20,
+        "leftover_loaf": 34,
         "revenue": 0,
-        "baking_cost": 109590,
-        "daily_profit": -109590,
-        "reward": -109590.0,
-        "cum_profit": -2267385,
-        "waste_rate": 216.9,
-        "stockout_rate": 42.3,
+        "baking_cost": 406390,
+        "daily_profit": -406390,
+        "reward": -4.0639,
+        "cum_profit": -2124495,
+        "waste_rate": 195.5,
+        "stockout_rate": 38.7,
         "customer_events": [
           {
             "id": 22,

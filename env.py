@@ -10,6 +10,7 @@ import gymnasium as gym
 from gymnasium import spaces
 
 import config
+from reward import compute_reward_v1
 
 # ══════════════════════════════════════════════════════════════════════════
 # 2절 반응 규칙 가정값 묶음 (config.py와 겹치지 않는 규칙 전용 수치)
@@ -313,7 +314,7 @@ class BakeryEnv(gym.Env):
         )
 
         daily_profit = revenue - baking_cost
-        reward = float(daily_profit)  # 임시 기본 보상: 당일 순이익
+        reward = compute_reward_v1(daily_profit, {"step": self.current_step})  # v1 보상: 10만 원 단위 스케일링 순이익
 
         # 통계 누적
         self.cum_profit += daily_profit
