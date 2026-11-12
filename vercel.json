@@ -1,5 +1,6 @@
 {
-  "version": 2,
+  "buildCommand": "echo 'Deploying static site'",
   "outputDirectory": "public",
-  "cleanUrls": true
+  "installCommand": "echo 'Skipping serverless install'",
+  "framework": null
 }
