@@ -22,9 +22,26 @@
       transition: all 0.25s ease;
     }
     
+    /* ── 왼쪽 사이드바 (두 카드가 절대 겹치지 않도록 flex 레이아웃 적용) ── */
+    #leftSidebar {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      width: 310px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 10;
+      pointer-events: none;
+    }
+    #leftSidebar .card {
+      position: static;
+      pointer-events: auto;
+    }
+    
     /* ── 왼쪽 위 작은 카드 ── */
     #topMiniCard {
-      top: 18px; left: 18px; width: 310px; padding: 14px 18px;
+      width: 100%; padding: 14px 18px;
     }
     .store-badge { font-size: 11px; font-weight: 700; color: #0f766e; background: #ccfbf1; padding: 3px 8px; border-radius: 6px; display: inline-block; margin-bottom: 4px; }
     .store-title { font-size: 18px; font-weight: 800; color: #0f172a; margin-bottom: 6px; }
@@ -34,7 +51,7 @@
 
     /* ── 왼쪽 프로젝트 소개 카드 ── */
     #introCard {
-      top: 142px; left: 18px; width: 310px; max-height: calc(100vh - 270px); overflow-y: auto;
+      width: 100%; max-height: calc(100vh - 230px); overflow-y: auto;
     }
     .card-header-toggle {
       display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; cursor: pointer; user-select: none;
@@ -92,39 +109,42 @@
   <!-- 아이소메트릭 2D 캔버스 -->
   <canvas id="mainCanvas"></canvas>
 
-  <!-- 1. 왼쪽 위 작은 카드 -->
-  <div class="card" id="topMiniCard">
-    <div class="store-badge">상암 DMC 베이커리</div>
-    <div class="store-title" id="dispStoreName">SMIT 베이커리</div>
-    <div class="date-row">
-      <span id="dispDate">2025-01-01 (수)</span>
-      <span class="clock-badge" id="dispTime">08:00</span>
-      <span id="dispDayNum" style="font-weight:700; color:#0f766e;">1 / 28일차</span>
-    </div>
-    <div class="weather-row">
-      <span id="dispWeather">☀️ 맑음 (-5.0℃ ~ 2.0℃)</span>
-      <span id="dispTrustBadge" style="color:#0f766e;">신뢰도 100점</span>
-    </div>
-  </div>
-
-  <!-- 2. 왼쪽 프로젝트 소개 카드 -->
-  <div class="card" id="introCard">
-    <div class="card-header-toggle" onclick="toggleCard('introBody', 'introToggleIcon')">
-      <span>ⓘ 프로젝트 소개</span>
-      <span id="introToggleIcon">▼</span>
-    </div>
-    <div id="introBody">
-      <div class="intro-body">
-        <div class="intro-row"><div class="intro-label">프로젝트 :</div><div class="intro-val">SMIT 베이커리 · 동네 빵집</div></div>
-        <div class="intro-row"><div class="intro-label">결정 :</div><div class="intro-val">매일 아침 빵 3종 굽는 양</div></div>
-        <div class="intro-row"><div class="intro-label">목적 :</div><div class="intro-val">28일 순이익 최대 (폐기·품절 최소)</div></div>
-        <div class="intro-row"><div class="intro-label">에이전트 :</div><div class="intro-val">매장 매니저 AI</div></div>
-        <div class="intro-row"><div class="intro-label">상태(State) :</div><div class="intro-val">신뢰도 · 남은 식빵 · 날씨 · 행사 외 3개</div></div>
-        <div class="intro-row"><div class="intro-label">행동(Action) :</div><div class="intro-val">샌드위치 0~60 · 간식 0~200 · 식빵 0~50</div></div>
-        <div class="intro-row"><div class="intro-label">보상(Reward) :</div><div class="intro-val">v1 : 당일 순이익 (매출 - 원가)</div></div>
-        <div class="intro-row"><div class="intro-label">한 판 :</div><div class="intro-val">결정 하루 1회 · 28일 완주</div></div>
+  <!-- 왼쪽 사이드바 (겹침 방지 컨테이너) -->
+  <div id="leftSidebar">
+    <!-- 1. 왼쪽 위 작은 카드 -->
+    <div class="card" id="topMiniCard">
+      <div class="store-badge">상암 DMC 베이커리</div>
+      <div class="store-title" id="dispStoreName">SMIT 베이커리</div>
+      <div class="date-row">
+        <span id="dispDate">2025-01-01 (수)</span>
+        <span class="clock-badge" id="dispTime">08:00</span>
+        <span id="dispDayNum" style="font-weight:700; color:#0f766e;">1 / 28일차</span>
       </div>
-      <div class="intro-footer" id="dispActivePolicyName">재생 중 : 내가 정한 규칙 (사장님 노하우)</div>
+      <div class="weather-row">
+        <span id="dispWeather">☀️ 맑음 (-5.0℃ ~ 2.0℃)</span>
+        <span id="dispTrustBadge" style="color:#0f766e;">신뢰도 100점</span>
+      </div>
+    </div>
+
+    <!-- 2. 왼쪽 프로젝트 소개 카드 -->
+    <div class="card" id="introCard">
+      <div class="card-header-toggle" onclick="toggleCard('introBody', 'introToggleIcon')">
+        <span>ⓘ 프로젝트 소개</span>
+        <span id="introToggleIcon">▼</span>
+      </div>
+      <div id="introBody">
+        <div class="intro-body">
+          <div class="intro-row"><div class="intro-label">프로젝트 :</div><div class="intro-val">SMIT 베이커리 · 동네 빵집</div></div>
+          <div class="intro-row"><div class="intro-label">결정 :</div><div class="intro-val">매일 아침 빵 3종 굽는 양</div></div>
+          <div class="intro-row"><div class="intro-label">목적 :</div><div class="intro-val">28일 순이익 최대 (폐기·품절 최소)</div></div>
+          <div class="intro-row"><div class="intro-label">에이전트 :</div><div class="intro-val">매장 매니저 AI</div></div>
+          <div class="intro-row"><div class="intro-label">상태(State) :</div><div class="intro-val">신뢰도 · 남은 식빵 · 날씨 · 행사 외 3개</div></div>
+          <div class="intro-row"><div class="intro-label">행동(Action) :</div><div class="intro-val">샌드위치 0~60 · 간식 0~200 · 식빵 0~50</div></div>
+          <div class="intro-row"><div class="intro-label">보상(Reward) :</div><div class="intro-val">v1 : 당일 순이익 (매출 - 원가)</div></div>
+          <div class="intro-row"><div class="intro-label">한 판 :</div><div class="intro-val">결정 하루 1회 · 28일 완주</div></div>
+        </div>
+        <div class="intro-footer" id="dispActivePolicyName">재생 중 : 내가 정한 규칙 (사장님 노하우)</div>
+      </div>
     </div>
   </div>
 
