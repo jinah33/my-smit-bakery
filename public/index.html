@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMIT 베이커리 매장 재생 화면</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; height: 100%; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif; background: #e0f2fe; }
+    #mainCanvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+    
+    /* ── 플로팅 UI 카드 공통 스타일 ── */
+    .card {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      z-index: 10;
+      color: #1e293b;
+      transition: all 0.25s ease;
+    }
+    
+    /* ── 왼쪽 위 작은 카드 ── */
+    #topMiniCard {
+      top: 18px; left: 18px; width: 310px; padding: 14px 18px;
+    }
+    .store-badge { font-size: 11px; font-weight: 700; color: #0f766e; background: #ccfbf1; padding: 3px 8px; border-radius: 6px; display: inline-block; margin-bottom: 4px; }
+    .store-title { font-size: 18px; font-weight: 800; color: #0f172a; margin-bottom: 6px; }
+    .date-row { display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #475569; margin-bottom: 6px; }
+    .weather-row { display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 600; padding-top: 6px; border-top: 1px solid #f1f5f9; }
+    .clock-badge { font-family: monospace; font-size: 13px; color: #0369a1; background: #e0f2fe; padding: 2px 7px; border-radius: 4px; }
+
+    /* ── 왼쪽 프로젝트 소개 카드 ── */
+    #introCard {
+      top: 142px; left: 18px; width: 310px; max-height: calc(100vh - 270px); overflow-y: auto;
+    }
+    .card-header-toggle {
+      display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; cursor: pointer; user-select: none;
+      font-size: 14px; font-weight: 700; color: #0f766e; border-bottom: 1px solid #f1f5f9;
+    }
+    .intro-body { padding: 14px 18px; font-size: 12px; line-height: 1.5; }
+    .intro-row { display: flex; margin-bottom: 8px; }
+    .intro-label { width: 95px; font-weight: 700; color: #0f766e; flex-shrink: 0; }
+    .intro-val { color: #334155; word-break: keep-all; }
+    .intro-footer { padding: 8px 18px 12px; font-size: 11px; color: #64748b; border-top: 1px solid #f1f5f9; background: #f8fafc; border-bottom-left-radius: 14px; border-bottom-right-radius: 14px; }
+
+    /* ── 오른쪽 위 결과 카드 ── */
+    #resultCard {
+      top: 18px; right: 18px; width: 330px;
+    }
+    .result-body { padding: 16px 18px; }
+    .dropdown-group { display: flex; gap: 8px; margin-bottom: 14px; }
+    select {
+      flex: 1; padding: 7px 10px; font-size: 12px; border-radius: 8px; border: 1px solid #cbd5e1; background: white; color: #1e293b; font-weight: 600; outline: none; cursor: pointer;
+    }
+    .big-metric-box { background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 10px; padding: 12px; text-align: center; margin-bottom: 12px; }
+    .big-metric-label { font-size: 11px; font-weight: 700; color: #0f766e; margin-bottom: 3px; }
+    .big-metric-val { font-size: 24px; font-weight: 900; color: #042f2e; }
+    .mini-metrics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+    .mini-box { background: #f8fafc; padding: 8px 10px; border-radius: 8px; font-size: 11px; }
+    .mini-box .lbl { color: #64748b; margin-bottom: 2px; }
+    .mini-box .val { font-weight: 700; color: #1e293b; font-size: 13px; }
+    .comparison-banner { padding: 8px 10px; border-radius: 8px; font-size: 11px; font-weight: 600; text-align: center; }
+    .comp-better { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+    .comp-worse { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+
+    /* ── 아래 가운데 재생 컨트롤러 ── */
+    #playbackBar {
+      bottom: 18px; left: 50%; transform: translateX(-50%); width: 720px; max-width: 90vw; padding: 12px 18px;
+    }
+    .controls-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+    .btn-group { display: flex; align-items: center; gap: 6px; }
+    .ctrl-btn {
+      background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: #334155; cursor: pointer; transition: all 0.15s;
+    }
+    .ctrl-btn:hover { background: #f1f5f9; color: #0f172a; }
+    .ctrl-btn.active { background: #0f766e; color: white; border-color: #0f766e; }
+    .day-progress-wrap { position: relative; width: 100%; height: 26px; display: flex; gap: 3px; }
+    .day-slot {
+      flex: 1; height: 100%; border-radius: 4px; cursor: pointer; background: #cbd5e1; transition: all 0.15s; position: relative;
+    }
+    .day-slot:hover { transform: scaleY(1.15); filter: brightness(1.1); }
+    .day-slot.current { border: 2px solid #0f172a; box-shadow: 0 0 6px rgba(15, 23, 42, 0.5); }
+    .day-slot.bad-weather::after {
+      content: "•"; position: absolute; bottom: 0px; left: 50%; transform: translateX(-50%); font-size: 14px; color: #3b82f6;
+    }
+  </style>
+</head>
+<body>
+  <!-- 아이소메트릭 2D 캔버스 -->
+  <canvas id="mainCanvas"></canvas>
+
+  <!-- 1. 왼쪽 위 작은 카드 -->
+  <div class="card" id="topMiniCard">
+    <div class="store-badge">상암 DMC 베이커리</div>
+    <div class="store-title" id="dispStoreName">SMIT 베이커리</div>
+    <div class="date-row">
+      <span id="dispDate">2025-01-01 (수)</span>
+      <span class="clock-badge" id="dispTime">08:00</span>
+      <span id="dispDayNum" style="font-weight:700; color:#0f766e;">1 / 28일차</span>
+    </div>
+    <div class="weather-row">
+      <span id="dispWeather">☀️ 맑음 (-5.0℃ ~ 2.0℃)</span>
+      <span id="dispTrustBadge" style="color:#0f766e;">신뢰도 100점</span>
+    </div>
+  </div>
+
+  <!-- 2. 왼쪽 프로젝트 소개 카드 -->
+  <div class="card" id="introCard">
+    <div class="card-header-toggle" onclick="toggleCard('introBody', 'introToggleIcon')">
+      <span>ⓘ 프로젝트 소개</span>
+      <span id="introToggleIcon">▼</span>
+    </div>
+    <div id="introBody">
+      <div class="intro-body">
+        <div class="intro-row"><div class="intro-label">프로젝트 :</div><div class="intro-val">SMIT 베이커리 · 동네 빵집</div></div>
+        <div class="intro-row"><div class="intro-label">결정 :</div><div class="intro-val">매일 아침 빵 3종 굽는 양</div></div>
+        <div class="intro-row"><div class="intro-label">목적 :</div><div class="intro-val">28일 순이익 최대 (폐기·품절 최소)</div></div>
+        <div class="intro-row"><div class="intro-label">에이전트 :</div><div class="intro-val">매장 매니저 AI</div></div>
+        <div class="intro-row"><div class="intro-label">상태(State) :</div><div class="intro-val">신뢰도 · 남은 식빵 · 날씨 · 행사 외 3개</div></div>
+        <div class="intro-row"><div class="intro-label">행동(Action) :</div><div class="intro-val">샌드위치 0~60 · 간식 0~200 · 식빵 0~50</div></div>
+        <div class="intro-row"><div class="intro-label">보상(Reward) :</div><div class="intro-val">v1 : 당일 순이익 (매출 - 원가)</div></div>
+        <div class="intro-row"><div class="intro-label">한 판 :</div><div class="intro-val">결정 하루 1회 · 28일 완주</div></div>
+      </div>
+      <div class="intro-footer" id="dispActivePolicyName">재생 중 : 내가 정한 규칙 (사장님 노하우)</div>
+    </div>
+  </div>
+
+  <!-- 3. 오른쪽 위 결과 카드 -->
+  <div class="card" id="resultCard">
+    <div class="card-header-toggle" onclick="toggleCard('resultBody', 'resultToggleIcon')">
+      <span>📊 평가 결과 카드</span>
+      <span id="resultToggleIcon">▼</span>
+    </div>
+    <div id="resultBody" class="result-body">
+      <div class="dropdown-group">
+        <select id="selPolicy" onchange="switchPolicy(this.value)">
+          <option value="owner_heuristic">내가 정한 규칙 (사장님 노하우)</option>
+          <option value="max_action">매일 최대로 행동 (최대 생산)</option>
+          <option value="random_action">무작위 행동 (균등 무작위)</option>
+          <option value="do_nothing">아무것도 안 함 (0개 생산)</option>
+        </select>
+      </div>
+      <div class="big-metric-box">
+        <div class="big-metric-label">28일 누적 순이익 (현재 진행)</div>
+        <div class="big-metric-val" id="dispCumProfit">0원</div>
+      </div>
+      <div class="mini-metrics-grid">
+        <div class="mini-box"><div class="lbl">당일 순이익</div><div class="val" id="dispDailyProfit">0원</div></div>
+        <div class="mini-box"><div class="lbl">현재 신뢰도</div><div class="val" id="dispTrust">100점</div></div>
+        <div class="mini-box"><div class="lbl">누적 폐기율</div><div class="val" id="dispWasteRate">0.0%</div></div>
+        <div class="mini-box"><div class="lbl">누적 품절률</div><div class="val" id="dispStockoutRate">0.0%</div></div>
+      </div>
+      <div class="comparison-banner comp-better" id="dispComparisonBanner">
+        기준 규칙(사장님 노하우) 대비 정상 운영 중
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. 아래 가운데 재생 막대 -->
+  <div class="card" id="playbackBar">
+    <div class="controls-row">
+      <div class="btn-group">
+        <button class="ctrl-btn" onclick="prevDay()">◀ 이전 날</button>
+        <button class="ctrl-btn active" id="btnPlayPause" onclick="togglePlay()">⏸ 일시정지</button>
+        <button class="ctrl-btn" onclick="nextDay()">다음 날 ▶</button>
+      </div>
+      <div class="btn-group">
+        <span style="font-size:11px; font-weight:700; color:#64748b; margin-right:4px;">배속:</span>
+        <button class="ctrl-btn" onclick="setSpeed(1)">1x</button>
+        <button class="ctrl-btn" onclick="setSpeed(10)">10x</button>
+        <button class="ctrl-btn active" id="btnSpeed30" onclick="setSpeed(30)">30x</button>
+        <button class="ctrl-btn" onclick="setSpeed(60)">60x</button>
+      </div>
+    </div>
+    <!-- 28일 날짜 슬롯 막대 -->
+    <div class="day-progress-wrap" id="daySlotsWrap"></div>
+  </div>
+
+  <script>
+    // ════════════════════════════════════════════════════════════════════════
+    // 전역 상태 및 데이터
+    // ════════════════════════════════════════════════════════════════════════
+    let playbackData = null;
+    let personasData = null;
+    let currentPolicy = "owner_heuristic";
+    let currentDayIndex = 0; // 0 ~ 27
+    let isPlaying = true;
+    let simSpeed = 30; // 1 화면초에 시뮬레이션 N분
+    let dayProgress = 0.0; // 0.0 (08:00 오픈) ~ 1.0 (21:00 마감)
+    let lastTimestamp = performance.now();
+
+    // 캔버스 설정
+    const canvas = document.getElementById("mainCanvas");
+    const ctx = canvas.getContext("2d");
+    let cw = 0, ch = 0;
+
+    function resizeCanvas() {
+      cw = window.innerWidth;
+      ch = window.innerHeight;
+      canvas.width = cw;
+      canvas.height = ch;
+    }
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+
+    // ════════════════════════════════════════════════════════════════════════
+    // 데이터 로드
+    // ════════════════════════════════════════════════════════════════════════
+    async function loadData() {
+      try {
+        const [resPb, resPe] = await Promise.all([
+          fetch("data/playback.json"),
+          fetch("data/personas.json")
+        ]);
+        playbackData = await resPb.json();
+        personasData = await resPe.json();
+        console.log("데이터 로드 성공:", playbackData);
+        initUI();
+        requestAnimationFrame(gameLoop);
+      } catch (err) {
+        console.error("데이터 로드 실패:", err);
+      }
+    }
+
+    // ════════════════════════════════════════════════════════════════════════
+    // UI 초기화 및 조작 함수
+    // ════════════════════════════════════════════════════════════════════════
+    function initUI() {
+      // 28일 슬롯 생성
+      const wrap = document.getElementById("daySlotsWrap");
+      wrap.innerHTML = "";
+      for (let i = 0; i < 28; i++) {
+        const slot = document.createElement("div");
+        slot.className = "day-slot";
+        slot.title = `${i + 1}일차`;
+        slot.onclick = () => jumpToDay(i);
+        wrap.appendChild(slot);
+      }
+      updateUI();
+    }
+
+    function toggleCard(bodyId, iconId) {
+      const body = document.getElementById(bodyId);
+      const icon = document.getElementById(iconId);
+      if (body.style.display === "none") {
+        body.style.display = "block";
+        icon.innerText = "▼";
+      } else {
+        body.style.display = "none";
+        icon.innerText = "▶";
+      }
+    }
+
+    function switchPolicy(pol) {
+      currentPolicy = pol;
+      currentDayIndex = 0;
+      dayProgress = 0.0;
+      const polNames = {
+        "owner_heuristic": "내가 정한 규칙 (사장님 노하우)",
+        "max_action": "매일 최대로 행동 (최대 생산)",
+        "random_action": "무작위 행동 (균등 무작위)",
+        "do_nothing": "아무것도 안 함 (0개 생산)"
+      };
+      document.getElementById("dispActivePolicyName").innerText = "재생 중 : " + polNames[pol];
+      updateUI();
+    }
+
+    function togglePlay() {
+      isPlaying = !isPlaying;
+      document.getElementById("btnPlayPause").innerText = isPlaying ? "⏸ 일시정지" : "▶ 재생";
+      document.getElementById("btnPlayPause").classList.toggle("active", isPlaying);
+    }
+
+    function setSpeed(sp) {
+      simSpeed = sp;
+      document.querySelectorAll(".controls-row .btn-group:last-child .ctrl-btn").forEach(btn => btn.classList.remove("active"));
+      event.target.classList.add("active");
+    }
+
+    function prevDay() {
+      if (currentDayIndex > 0) {
+        currentDayIndex--;
+        dayProgress = 0.0;
+        updateUI();
+      }
+    }
+
+    function nextDay() {
+      if (currentDayIndex < 27) {
+        currentDayIndex++;
+        dayProgress = 0.0;
+        updateUI();
+      }
+    }
+
+    function jumpToDay(idx) {
+      currentDayIndex = idx;
+      dayProgress = 0.0;
+      updateUI();
+    }
+
+    function updateUI() {
+      if (!playbackData) return;
+      const days = playbackData.episodes[currentPolicy];
+      const cur = days[currentDayIndex];
+
+      // 상단 카드
+      document.getElementById("dispDate").innerText = `${cur.date} (${cur.day_name})`;
+      document.getElementById("dispDayNum").innerText = `${cur.day} / 28일차`;
+      
+      const wIcon = cur.weather_type === "비" ? "🌧️" : (cur.weather_type === "눈" ? "❄️" : "☀️");
+      document.getElementById("dispWeather").innerText = `${wIcon} ${cur.weather_type} (${cur.temp_min}℃ ~ ${cur.temp_max}℃)`;
+      document.getElementById("dispTrustBadge").innerText = `신뢰도 ${cur.customer_trust}점`;
+
+      // 결과 카드
+      document.getElementById("dispCumProfit").innerText = `${cur.cum_profit.toLocaleString()}원`;
+      document.getElementById("dispDailyProfit").innerText = `${cur.daily_profit.toLocaleString()}원`;
+      document.getElementById("dispTrust").innerText = `${cur.customer_trust}점`;
+      document.getElementById("dispWasteRate").innerText = `${cur.waste_rate}%`;
+      document.getElementById("dispStockoutRate").innerText = `${cur.stockout_rate}%`;
+
+      // 판별 배너
+      const banner = document.getElementById("dispComparisonBanner");
+      if (currentPolicy === "owner_heuristic") {
+        banner.className = "comparison-banner comp-better";
+        banner.innerText = "★ 기준 규칙 (사장님 노하우 1위)";
+      } else if (currentPolicy === "max_action") {
+        banner.className = "comparison-banner comp-worse";
+        banner.innerText = "과잉 폐기 패널티로 적자 및 신뢰도 파산";
+      } else {
+        banner.className = "comparison-banner comp-worse";
+        banner.innerText = "기준 규칙 대비 순이익 저조";
+      }
+
+      // 슬롯 스타일 업데이트
+      const slots = document.querySelectorAll(".day-slot");
+      slots.forEach((s, idx) => {
+        s.classList.toggle("current", idx === currentDayIndex);
+        const d = days[idx];
+        if (d.cum_profit > 0) {
+          s.style.background = "#10b981"; // 초록 흑자
+        } else if (d.cum_profit === 0) {
+          s.style.background = "#94a3b8"; // 회색
+        } else {
+          s.style.background = "#ef4444"; // 빨강 적자
+        }
+        s.classList.toggle("bad-weather", d.is_bad_weather === 1);
+      });
+    }
+
+    // ════════════════════════════════════════════════════════════════════════
+    // 아이소메트릭 3D -> 2D 변환 엔진
+    // ════════════════════════════════════════════════════════════════════════
+    const ISO_ANGLE = Math.PI / 6; // 30도
+    const COS30 = Math.cos(ISO_ANGLE);
+    const SIN30 = Math.sin(ISO_ANGLE);
+
+    function toScreen(x, y, z, originX, originY, scale = 1.0) {
+      const sx = originX + (x - y) * COS30 * scale;
+      const sy = originY + (x + y) * SIN30 * scale - z * scale;
+      return { x: sx, y: sy };
+    }
+
+    // 3D 상자 그리기 (윗면, 앞면, 옆면 밝기 분리)
+    function drawBox(x, y, z, w, d, h, topCol, frontCol, sideCol, ox, oy, scale = 1.0) {
+      // 바닥 및 상단 8개 꼭짓점
+      const p0 = toScreen(x, y, z, ox, oy, scale);
+      const p1 = toScreen(x + w, y, z, ox, oy, scale);
+      const p2 = toScreen(x + w, y + d, z, ox, oy, scale);
+      const p3 = toScreen(x, y + d, z, ox, oy, scale);
+      
+      const p4 = toScreen(x, y, z + h, ox, oy, scale);
+      const p5 = toScreen(x + w, y, z + h, ox, oy, scale);
+      const p6 = toScreen(x + w, y + d, z + h, ox, oy, scale);
+      const p7 = toScreen(x, y + d, z + h, ox, oy, scale);
+
+      // 앞면 (Front / 남쪽 면: p3 -> p2 -> p6 -> p7)
+      ctx.fillStyle = frontCol;
+      ctx.beginPath();
+      ctx.moveTo(p3.x, p3.y);
+      ctx.lineTo(p2.x, p2.y);
+      ctx.lineTo(p6.x, p6.y);
+      ctx.lineTo(p7.x, p7.y);
+      ctx.closePath();
+      ctx.fill();
+
+      // 옆면 (Side / 동쪽 면: p1 -> p2 -> p6 -> p5)
+      ctx.fillStyle = sideCol;
+      ctx.beginPath();
+      ctx.moveTo(p1.x, p1.y);
+      ctx.lineTo(p2.x, p2.y);
+      ctx.lineTo(p6.x, p6.y);
+      ctx.lineTo(p5.x, p5.y);
+      ctx.closePath();
+      ctx.fill();
+
+      // 윗면 (Top: p4 -> p5 -> p6 -> p7)
+      ctx.fillStyle = topCol;
+      ctx.beginPath();
+      ctx.moveTo(p4.x, p4.y);
+      ctx.lineTo(p5.x, p5.y);
+      ctx.lineTo(p6.x, p6.y);
+      ctx.lineTo(p7.x, p7.y);
+      ctx.closePath();
+      ctx.fill();
+    }
+
+    // ════════════════════════════════════════════════════════════════════════
+    // 메인 게임 루프 (렌더링 & 애니메이션)
+    // ════════════════════════════════════════════════════════════════════════
+    function gameLoop(timestamp) {
+      const dt = (timestamp - lastTimestamp) / 1000.0;
+      lastTimestamp = timestamp;
+
+      // 시간 진행 (하루 13시간: 08:00 ~ 21:00 = 780분)
+      if (isPlaying && playbackData) {
+        const dayMinutes = 780; // 13시간
+        const progressPerSec = (simSpeed) / dayMinutes; // 1초당 진행도
+        dayProgress += progressPerSec * dt;
+
+        if (dayProgress >= 1.0) {
+          dayProgress = 0.0;
+          if (currentDayIndex < 27) {
+            currentDayIndex++;
+            updateUI();
+          } else {
+            currentDayIndex = 0; // 루프 재생
+            updateUI();
+          }
+        }
+      }
+
+      // 시각 계산 (08:00 시작)
+      const curHour = Math.floor(8 + dayProgress * 13);
+      const curMin = Math.floor((dayProgress * 13 * 60) % 60);
+      document.getElementById("dispTime").innerText = 
+        `${String(curHour).padStart(2, '0')}:${String(curMin).padStart(2, '0')}`;
+
+      // ── 1. 하늘 및 조명 렌더링 (낮과 밤) ──
+      renderSkyAndLighting();
+
+      // ── 2. 동네 및 매장 아이소메트릭 렌더링 ──
+      if (playbackData) {
+        renderScene();
+      }
+
+      requestAnimationFrame(gameLoop);
+    }
+
+    // 하늘 및 시간대 조명 색상
+    function renderSkyAndLighting() {
+      // 아침 주황 -> 한낮 파랑 -> 노을 분홍 -> 밤 남색
+      let skyTop = "#38bdf8", skyBot = "#bae6fd";
+      let lightOverlay = "rgba(0,0,0,0)";
+
+      if (dayProgress < 0.2) { // 08:00 ~ 10:30 아침
+        skyTop = "#fdba74"; skyBot = "#fed7aa";
+        lightOverlay = "rgba(251, 146, 60, 0.08)";
+      } else if (dayProgress < 0.7) { // 10:30 ~ 17:00 한낮
+        skyTop = "#38bdf8"; skyBot = "#e0f2fe";
+        lightOverlay = "rgba(0, 0, 0, 0)";
+      } else if (dayProgress < 0.85) { // 17:00 ~ 19:00 노을
+        skyTop = "#f43f5e"; skyBot = "#fde047";
+        lightOverlay = "rgba(244, 63, 94, 0.12)";
+      } else { // 19:00 ~ 21:00 밤
+        skyTop = "#0f172a"; skyBot = "#1e1b4b";
+        lightOverlay = "rgba(15, 23, 42, 0.45)";
+      }
+
+      // 비/눈 날씨인 경우 하늘 회색빛 처리
+      if (playbackData) {
+        const curDay = playbackData.episodes[currentPolicy][currentDayIndex];
+        if (curDay.weather_type === "비" || curDay.weather_type === "눈") {
+          skyTop = "#64748b"; skyBot = "#94a3b8";
+        }
+      }
+
+      const grad = ctx.createLinearGradient(0, 0, 0, ch);
+      grad.addColorStop(0, skyTop);
+      grad.addColorStop(1, skyBot);
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, cw, ch);
+
+      return lightOverlay;
+    }
+
+    // ── 3D 장면 렌더링 ──
+    function renderScene() {
+      const curDay = playbackData.episodes[currentPolicy][currentDayIndex];
+      const ox = cw / 2;
+      const oy = ch / 2 + 80;
+      const scale = Math.min(cw / 1100, ch / 800) * 1.0;
+
+      // 1. 지면(도로, 인도, 잔디)
+      drawGround(ox, oy, scale);
+
+      // 2. 뒤편 배경 건물 (상암 오피스 & 아파트 단지)
+      drawBackgroundBuildings(ox, oy, scale);
+
+      // 3. 가운데 SMIT 베이커리 매장 (지붕 없이 내부 투시)
+      drawBakeryStore(curDay, ox, oy, scale);
+
+      // 4. 손님 이동 애니메이션 & 말풍선
+      drawCustomersAndEvents(curDay, ox, oy, scale);
+
+      // 5. 날씨 파티클 (비, 눈)
+      drawWeatherParticles(curDay);
+
+      // 6. 밤 조명 오버레이
+      if (dayProgress >= 0.85) {
+        ctx.fillStyle = "rgba(15, 23, 42, 0.42)";
+        ctx.fillRect(0, 0, cw, ch);
+      }
+    }
+
+    function drawGround(ox, oy, scale) {
+      // 큰 메인 블록 잔디
+      drawBox(-450, -380, -5, 900, 760, 5, "#a7f3d0", "#86efac", "#6ee7b7", ox, oy, scale);
+      // 아스팔트 도로 (앞쪽 가로지르는 차도)
+      drawBox(-450, 220, 0, 900, 140, 2, "#475569", "#334155", "#1e293b", ox, oy, scale);
+      // 도로 중앙 점선
+      for (let rx = -420; rx < 440; rx += 70) {
+        drawBox(rx, 285, 2, 40, 7, 1, "#f8fafc", "#e2e8f0", "#cbd5e1", ox, oy, scale);
+      }
+      // 매장 앞 넓은 인도 (보도블록)
+      drawBox(-360, 110, 2, 720, 110, 3, "#e2e8f0", "#cbd5e1", "#94a3b8", ox, oy, scale);
+    }
+
+    // 뒤편 배경 건물 (상암 오피스 & DMC 아파트 단지)
+    function drawBackgroundBuildings(ox, oy, scale) {
+      // 1. 좌측 뒤편: 상암 DMC IT 오피스 빌딩군
+      drawBox(-400, -320, 0, 140, 140, 190, "#93c5fd", "#60a5fa", "#3b82f6", ox, oy, scale);
+      // 오피스 빌딩 창문 패턴
+      for (let bz = 25; bz < 180; bz += 22) {
+        for (let bx = -385; bx < -275; bx += 28) {
+          drawBox(bx, -179, bz, 18, 2, 12, "#dbeafe", "#bfdbfe", "#93c5fd", ox, oy, scale);
+        }
+      }
+      const officeLbl = toScreen(-330, -180, 205, ox, oy, scale);
+      drawTextLabel("🏢 상암 DMC 오피스군", officeLbl.x, officeLbl.y);
+
+      // 서브 오피스 빌딩
+      drawBox(-240, -340, 0, 90, 110, 130, "#cbd5e1", "#94a3b8", "#64748b", ox, oy, scale);
+
+      // 2. 우측 뒤편: DMC 주거 아파트 단지
+      drawBox(250, -320, 0, 150, 130, 170, "#fde68a", "#fcd34d", "#f59e0b", ox, oy, scale);
+      // 아파트 발코니 창문 패턴
+      for (let az = 20; az < 160; az += 24) {
+        for (let ax = 265; ax < 380; ax += 32) {
+          drawBox(ax, -189, az, 22, 3, 13, "#fef3c7", "#fde68a", "#f59e0b", ox, oy, scale);
+        }
+      }
+      const aptLbl = toScreen(325, -185, 185, ox, oy, scale);
+      drawTextLabel("🏘️ DMC 주거 아파트단지", aptLbl.x, aptLbl.y);
+
+      // 서브 아파트 동
+      drawBox(140, -340, 0, 95, 100, 120, "#e2e8f0", "#cbd5e1", "#94a3b8", ox, oy, scale);
+    }
+
+    function drawBakeryStore(curDay, ox, oy, scale) {
+      // ══════════════════════════════════════════════════════════════════
+      // 1. 매장 바닥 (크기 360 x 220 으로 넓힘, 세련된 원목/체크 타일)
+      // ══════════════════════════════════════════════════════════════════
+      drawBox(-180, -110, 2, 360, 220, 4, "#ffedd5", "#fed7aa", "#fdba74", ox, oy, scale);
+      
+      // 바닥 타일 라인 느낌
+      for (let tx = -170; tx < 170; tx += 60) {
+        drawBox(tx, -110, 6, 2, 220, 1, "#fed7aa", "#fed7aa", "#fed7aa", ox, oy, scale);
+      }
+      for (let ty = -100; ty < 100; ty += 50) {
+        drawBox(-180, ty, 6, 360, 2, 1, "#fed7aa", "#fed7aa", "#fed7aa", ox, oy, scale);
+      }
+
+      // ══════════════════════════════════════════════════════════════════
+      // 2. 매장 벽체 (뒷벽, 좌측벽, 정면 유리 외벽 & 출입문)
+      // ══════════════════════════════════════════════════════════════════
+      // 뒷벽 (길이 360, 높이 85)
+      drawBox(-180, -110, 6, 360, 8, 85, "#f8fafc", "#e2e8f0", "#cbd5e1", ox, oy, scale);
+      // 좌측벽 (길이 220, 높이 85)
+      drawBox(-180, -110, 6, 8, 220, 85, "#f8fafc", "#e2e8f0", "#cbd5e1", ox, oy, scale);
+
+      // 메인 베이커리 간판 (뒷벽 상단 중앙)
+      drawBox(-110, -114, 78, 220, 6, 20, "#064e3b", "#064e3b", "#064e3b", ox, oy, scale);
+      const signPos = toScreen(0, -114, 88, ox, oy, scale);
+      ctx.font = `bold ${Math.round(13 * scale)}px sans-serif`;
+      ctx.fillStyle = "#fef08a";
+      ctx.textAlign = "center";
+      ctx.fillText("🥖 SMIT BAKERY & CAFÉ 🥐", signPos.x, signPos.y + 4);
+
+      // 정면 외벽 (낮은 유리 쇼윈도 벽 & 출입문 프레임)
+      // 좌측 쇼윈도 벽 (x: -180 ~ -30)
+      drawBox(-180, 108, 6, 150, 6, 28, "#e2e8f0", "#cbd5e1", "#94a3b8", ox, oy, scale);
+      drawBox(-175, 109, 34, 140, 4, 38, "rgba(186, 230, 253, 0.4)", "rgba(186, 230, 253, 0.4)", "rgba(186, 230, 253, 0.4)", ox, oy, scale);
+
+      // 우측 쇼윈도 벽 (x: 40 ~ 180)
+      drawBox(40, 108, 6, 140, 6, 28, "#e2e8f0", "#cbd5e1", "#94a3b8", ox, oy, scale);
+      drawBox(45, 109, 34, 130, 4, 38, "rgba(186, 230, 253, 0.4)", "rgba(186, 230, 253, 0.4)", "rgba(186, 230, 253, 0.4)", ox, oy, scale);
+
+      // ── [정면 메인 출입문 (Entrance Door: x: -30 ~ 40, y: 110)] ──
+      // 출입문 기둥 프레임 (좌/우 기둥)
+      drawBox(-32, 106, 6, 6, 6, 75, "#0f766e", "#115e59", "#134e4a", ox, oy, scale);
+      drawBox(38, 106, 6, 6, 6, 75, "#0f766e", "#115e59", "#134e4a", ox, oy, scale);
+      // 문 상단 아치 프레임
+      drawBox(-32, 106, 75, 76, 6, 8, "#0f766e", "#115e59", "#134e4a", ox, oy, scale);
+
+      // 출입문 양개형 유리문 (열려 있는 느낌)
+      drawBox(-26, 108, 6, 30, 3, 68, "rgba(224, 242, 254, 0.5)", "rgba(224, 242, 254, 0.5)", "rgba(224, 242, 254, 0.5)", ox, oy, scale);
+      drawBox(8, 108, 6, 30, 3, 68, "rgba(224, 242, 254, 0.5)", "rgba(224, 242, 254, 0.5)", "rgba(224, 242, 254, 0.5)", ox, oy, scale);
+      // 은색 문 손잡이
+      drawBox(-2, 111, 38, 4, 2, 12, "#cbd5e1", "#94a3b8", "#64748b", ox, oy, scale);
+      drawBox(6, 111, 38, 4, 2, 12, "#cbd5e1", "#94a3b8", "#64748b", ox, oy, scale);
+
+      // 출입구 발판 (Welcome 매트)
+      drawBox(-24, 114, 2, 54, 28, 2, "#991b1b", "#7f1d1d", "#7f1d1d", ox, oy, scale);
+      const doorLbl = toScreen(3, 118, 5, ox, oy, scale);
+      ctx.font = "bold 9px sans-serif";
+      ctx.fillStyle = "#ffffff";
+      ctx.textAlign = "center";
+      ctx.fillText("WELCOME", doorLbl.x, doorLbl.y);
+
+      // 매장 앞 세련된 스트라이프 어닝 (차양막)
+      for (let ax = -34; ax < 40; ax += 12) {
+        const awnCol = (Math.floor(ax / 12) % 2 === 0) ? "#0f766e" : "#ffedd5";
+        drawBox(ax, 110, 78, 12, 24, 6, awnCol, awnCol, awnCol, ox, oy, scale);
+      }
+
+      // 매장 앞 A자 입간판
+      drawBox(-55, 125, 2, 16, 10, 22, "#1e293b", "#0f172a", "#0f172a", ox, oy, scale);
+      const signAPos = toScreen(-47, 130, 24, ox, oy, scale);
+      drawTextLabel("갓 구운 빵 🍞", signAPos.x, signAPos.y);
+
+      // ══════════════════════════════════════════════════════════════════
+      // 3. 빵집 내부 핵심 시설 (오븐, 식빵벽, 중앙매대, 냉장쇼케이스, POS)
+      // ══════════════════════════════════════════════════════════════════
+
+      // [시설 A: 대형 3단 제빵 오븐 (좌측 뒤)]
+      drawBox(-168, -95, 6, 75, 40, 65, "#475569", "#334155", "#1e293b", ox, oy, scale);
+      // 오븐 유리창 및 내부 붉은 베이킹 열기
+      for (let oz = 15; oz < 60; oz += 18) {
+        drawBox(-166, -56, oz, 71, 3, 12, "#f97316", "#ea580c", "#c2410c", ox, oy, scale);
+      }
+      const ovenLbl = toScreen(-130, -75, 75, ox, oy, scale);
+      drawTextLabel("🔥 3단 덱오븐", ovenLbl.x, ovenLbl.y);
+
+      // [시설 B: 빵 식히는 트레이 랙 (오븐 옆)]
+      drawBox(-168, -45, 6, 30, 35, 60, "#cbd5e1", "#94a3b8", "#64748b", ox, oy, scale);
+      for (let rz = 12; rz < 55; rz += 10) {
+        drawBox(-166, -43, rz, 26, 31, 3, "#fde68a", "#f59e0b", "#d97706", ox, oy, scale);
+      }
+
+      // 주방 제빵사 직원 (흰 가운, 제빵 모자)
+      drawCharacter(-115, -45, 6, "#ffffff", "#f8fafc", ox, oy, scale);
+
+      // [시설 C: 벽면 식빵 전용 3단 선반 (뒷벽 우측)]
+      drawBox(40, -104, 6, 120, 20, 70, "#b45309", "#92400e", "#78350f", ox, oy, scale);
+      // 선반에 진열된 식빵들
+      for (let sz = 16; sz < 65; sz += 20) {
+        for (let sx = 50; sx < 150; sx += 22) {
+          drawBox(sx, -98, sz, 16, 14, 14, "#fed7aa", "#f97316", "#c2410c", ox, oy, scale);
+        }
+      }
+      const loafWallLbl = toScreen(100, -95, 76, ox, oy, scale);
+      drawTextLabel("식빵 전용 매대", loafWallLbl.x, loafWallLbl.y);
+
+      // [시설 D: 중앙 메인 아일랜드 빵 진열대 (중앙 넓은 우드 테이블)]
+      drawBox(-70, -25, 6, 150, 45, 26, "#b45309", "#92400e", "#78350f", ox, oy, scale);
+      
+      // 트레이/집게 거치대 (진열대 시작부)
+      drawBox(-65, -20, 32, 18, 18, 12, "#cbd5e1", "#94a3b8", "#64748b", ox, oy, scale);
+      drawBox(-62, -18, 44, 12, 14, 4, "#fed7aa", "#fdba74", "#fb923c", ox, oy, scale);
+
+      // 빵집 바게트 통 (긴 바게트들이 꽂힌 통)
+      drawBox(-38, -20, 32, 14, 14, 16, "#78350f", "#451a03", "#451a03", ox, oy, scale);
+      drawBox(-36, -18, 46, 5, 5, 24, "#fed7aa", "#ea580c", "#c2410c", ox, oy, scale);
+      drawBox(-30, -17, 45, 5, 5, 22, "#fed7aa", "#ea580c", "#c2410c", ox, oy, scale);
+
+      // 실시간 수량 계산
+      const act = curDay.action;
+      const sales = curDay.sales;
+      const swRem = Math.max(0, act.sandwich - Math.round(sales.sandwich * dayProgress));
+      const snackRem = Math.max(0, act.snack_bread - Math.round(sales.snack_bread * dayProgress));
+      const loafRem = Math.max(0, act.loaf_bread - Math.round(sales.loaf_bread * dayProgress));
+
+      // 간식빵 진열 구역 (소금빵, 크루아상 황금빛 빵들)
+      for (let kx = -15; kx < 35; kx += 16) {
+        drawBox(kx, -18, 32, 13, 16, 8, "#fde047", "#eab308", "#ca8a04", ox, oy, scale);
+        drawBox(kx, 0, 32, 13, 16, 7, "#fed7aa", "#f59e0b", "#d97706", ox, oy, scale);
+      }
+
+      // [시설 E: 샌드위치 신선 냉장 쇼케이스 (중앙 매대 우측 연결)]
+      drawBox(40, -25, 6, 45, 45, 28, "#0284c7", "#0369a1", "#075985", ox, oy, scale);
+      drawBox(43, -22, 34, 39, 39, 14, "rgba(186, 230, 253, 0.5)", "rgba(186, 230, 253, 0.5)", "rgba(186, 230, 253, 0.5)", ox, oy, scale);
+      // 쇼케이스 안 샌드위치들 (초록/신선)
+      drawBox(48, -16, 36, 14, 12, 8, "#86efac", "#22c55e", "#15803d", ox, oy, scale);
+      drawBox(64, -16, 36, 14, 12, 8, "#86efac", "#22c55e", "#15803d", ox, oy, scale);
+
+      // 메인 진열대 이름표 (중앙 매대 바로 앞)
+      const lblPos = toScreen(5, 26, 12, ox, oy, scale);
+      drawTextLabel(`🥪 샌드위치: ${swRem}/${act.sandwich} · 🥐 간식빵: ${snackRem}/${act.snack_bread} · 🍞 식빵: ${loafRem}/${act.loaf_bread}`, lblPos.x, lblPos.y);
+
+      // [시설 F: 계산대 카운터 & POS기 & 커피머신 (우측 앞)]
+      drawBox(95, 30, 6, 70, 45, 28, "#78350f", "#451a03", "#381e05", ox, oy, scale);
+      // POS 모니터
+      drawBox(105, 40, 34, 16, 12, 14, "#1e293b", "#0f172a", "#0f172a", ox, oy, scale);
+      // 커피머신
+      drawBox(135, 35, 34, 22, 20, 22, "#475569", "#334155", "#1e293b", ox, oy, scale);
+      // 카운터 직원 (앞치마)
+      drawCharacter(130, 55, 6, "#0f766e", "#1e293b", ox, oy, scale);
+    }
+
+    // 캐릭터 그리기 (단순 아이소메트릭 미니어처 비율)
+    function drawCharacter(x, y, z, topColor, pantsColor, ox, oy, scale) {
+      // 다리/바지
+      drawBox(x - 3, y - 3, z, 6, 6, 14, pantsColor, pantsColor, pantsColor, ox, oy, scale);
+      // 몸통/상의
+      drawBox(x - 5, y - 5, z + 14, 10, 10, 14, topColor, topColor, topColor, ox, oy, scale);
+      // 얼굴
+      drawBox(x - 4, y - 4, z + 28, 8, 8, 8, "#fed7aa", "#fdba74", "#fb923c", ox, oy, scale);
+    }
+
+    // 손님 동선 및 말풍선 렌더링 (출입문 통과)
+    function drawCustomersAndEvents(curDay, ox, oy, scale) {
+      const events = curDay.customer_events || [];
+      const activeCount = Math.min(8, events.length);
+
+      for (let i = 0; i < activeCount; i++) {
+        const ev = events[i];
+        const phase = (dayProgress * 4 + i / activeCount) % 1.0;
+        
+        let cx = 0, cy = 0;
+        // 출입문 좌표: (0, 110)
+        // 매장 내부 쇼핑 좌표: (0, 35)
+        if (ev.origin === "office") {
+          const startX = -280, startY = 160; // 오피스 쪽 보도블록
+          if (phase < 0.25) { // 1. 매장 출입문으로 걸어옴
+            const t = phase / 0.25;
+            cx = startX + (0 - startX) * t;
+            cy = startY + (115 - startY) * t;
+          } else if (phase < 0.5) { // 2. 출입문 통과해 빵 진열대로 들어옴
+            const t = (phase - 0.25) / 0.25;
+            cx = 0 + (0 - 0) * t;
+            cy = 115 + (35 - 115) * t;
+          } else if (phase < 0.75) { // 3. 빵 구매 후 계산대 거쳐 출입문으로 나옴
+            const t = (phase - 0.5) / 0.25;
+            cx = 0 + (0 - 0) * t;
+            cy = 35 + (115 - 35) * t;
+          } else { // 4. 다시 오피스로 복귀
+            const t = (phase - 0.75) / 0.25;
+            cx = 0 + (startX - 0) * t;
+            cy = 115 + (startY - 115) * t;
+          }
+        } else {
+          const startX = 270, startY = 160; // 아파트 쪽 보도블록
+          if (phase < 0.25) {
+            const t = phase / 0.25;
+            cx = startX + (5 - startX) * t;
+            cy = startY + (115 - startY) * t;
+          } else if (phase < 0.5) {
+            const t = (phase - 0.25) / 0.25;
+            cx = 5 + (5 - 5) * t;
+            cy = 115 + (35 - 115) * t;
+          } else if (phase < 0.75) {
+            const t = (phase - 0.5) / 0.25;
+            cx = 5 + (5 - 5) * t;
+            cy = 35 + (115 - 35) * t;
+          } else {
+            const t = (phase - 0.75) / 0.25;
+            cx = 5 + (startX - 5) * t;
+            cy = 115 + (startY - 115) * t;
+          }
+        }
+
+        const topCol = ev.role === "office_worker" ? "#0284c7" : "#ea580c";
+        const pantsCol = ev.sex === "남자" ? "#1e293b" : "#475569";
+        drawCharacter(cx, cy, 2, topCol, pantsCol, ox, oy, scale);
+
+        // 매장 안에서 쇼핑하고 나올 때(phase 0.4 ~ 0.7) 말풍선 띄움
+        if (phase > 0.4 && phase < 0.72) {
+          const headPos = toScreen(cx, cy, 58, ox, oy, scale);
+          drawSpeechBubble(ev.msg, ev.result, headPos.x, headPos.y);
+        }
+      }
+    }
+
+    function drawSpeechBubble(msg, result, sx, sy) {
+      ctx.save();
+      ctx.font = "bold 11px sans-serif";
+      const padX = 8, padY = 4;
+      const tw = ctx.measureText(msg).width;
+      const bw = tw + padX * 2;
+      const bh = 22;
+      const bx = sx - bw / 2;
+      const by = sy - bh - 6;
+
+      // 결과별 배경색: 성공(초록), 차선대체(주황), 실패(빨강)
+      let bCol = "#dcfce7", tCol = "#166534", borderCol = "#86efac";
+      if (result === "substitute") {
+        bCol = "#fef3c7"; tCol = "#92400e"; borderCol = "#fcd34d";
+      } else if (result === "unmet") {
+        bCol = "#fee2e2"; tCol = "#991b1b"; borderCol = "#fca5a5";
+      }
+
+      ctx.fillStyle = bCol;
+      ctx.strokeStyle = borderCol;
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.roundRect(bx, by, bw, bh, 6);
+      ctx.fill();
+      ctx.stroke();
+
+      // 말풍선 꼬리
+      ctx.beginPath();
+      ctx.moveTo(sx - 4, by + bh);
+      ctx.lineTo(sx + 4, by + bh);
+      ctx.lineTo(sx, by + bh + 5);
+      ctx.closePath();
+      ctx.fillStyle = bCol;
+      ctx.fill();
+
+      ctx.fillStyle = tCol;
+      ctx.textAlign = "center";
+      ctx.fillText(msg, sx, by + 15);
+      ctx.restore();
+    }
+
+    function drawTextLabel(txt, sx, sy) {
+      ctx.save();
+      ctx.font = "bold 11px sans-serif";
+      const tw = ctx.measureText(txt).width;
+      ctx.fillStyle = "rgba(255, 255, 255, 0.9)";
+      ctx.beginPath();
+      ctx.roundRect(sx - tw / 2 - 6, sy - 9, tw + 12, 18, 4);
+      ctx.fill();
+      ctx.strokeStyle = "rgba(0,0,0,0.15)";
+      ctx.stroke();
+
+      ctx.fillStyle = "#0f172a";
+      ctx.textAlign = "center";
+      ctx.fillText(txt, sx, sy + 4);
+      ctx.restore();
+    }
+
+    // 날씨 파티클 (비, 눈)
+    function drawWeatherParticles(curDay) {
+      if (curDay.weather_type === "비") {
+        ctx.strokeStyle = "rgba(147, 197, 253, 0.65)";
+        ctx.lineWidth = 1.5;
+        const time = performance.now() * 0.002;
+        ctx.beginPath();
+        for (let i = 0; i < 45; i++) {
+          const rx = (i * 47 + time * 400) % cw;
+          const ry = (i * 37 + time * 900) % ch;
+          ctx.moveTo(rx, ry);
+          ctx.lineTo(rx - 4, ry + 16);
+        }
+        ctx.stroke();
+      } else if (curDay.weather_type === "눈") {
+        ctx.fillStyle = "rgba(255, 255, 255, 0.85)";
+        const time = performance.now() * 0.001;
+        for (let i = 0; i < 50; i++) {
+          const rx = (i * 39 + Math.sin(time + i) * 30) % cw;
+          const ry = (i * 29 + time * 120) % ch;
+          ctx.beginPath();
+          ctx.arc(rx, ry, 2.5, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+    }
+
+    // 시작
+    loadData();
+  </script>
+</body>
+</html>

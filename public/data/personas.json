@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "age": 26,
+    "sex": "남자",
+    "occupation": "영업 관리 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "부모와 동거"
+  },
+  {
+    "id": 2,
+    "age": 44,
+    "sex": "여자",
+    "occupation": "그 외 제품 디자이너",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 3,
+    "age": 39,
+    "sex": "여자",
+    "occupation": "무직",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 4,
+    "age": 49,
+    "sex": "남자",
+    "occupation": "상·하수 배관공",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 5,
+    "age": 39,
+    "sex": "여자",
+    "occupation": "지방행정 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 6,
+    "age": 27,
+    "sex": "여자",
+    "occupation": "상품 기획자",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 7,
+    "age": 41,
+    "sex": "여자",
+    "occupation": "마케팅 전문가",
+    "category": "직장인",
+    "role": "general",
+    "housing": "연립주택",
+    "family": "배우자·자녀·아버지와 거주"
+  },
+  {
+    "id": 8,
+    "age": 32,
+    "sex": "여자",
+    "occupation": "산업 안전원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 9,
+    "age": 46,
+    "sex": "여자",
+    "occupation": "변리사",
+    "category": "아파트주민",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "배우자와 거주"
+  },
+  {
+    "id": 10,
+    "age": 29,
+    "sex": "여자",
+    "occupation": "경리 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "연립주택",
+    "family": "부모와 동거"
+  },
+  {
+    "id": 11,
+    "age": 43,
+    "sex": "여자",
+    "occupation": "보육 관련 시설 서비스 종사원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 12,
+    "age": 35,
+    "sex": "여자",
+    "occupation": "통계 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 13,
+    "age": 49,
+    "sex": "여자",
+    "occupation": "네트워크 프로그래머",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 14,
+    "age": 31,
+    "sex": "남자",
+    "occupation": "그 외 금융 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "비친족 동거"
+  },
+  {
+    "id": 15,
+    "age": 35,
+    "sex": "여자",
+    "occupation": "내과 전문 의사",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 16,
+    "age": 30,
+    "sex": "남자",
+    "occupation": "네트워크 시스템 개발자",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "배우자와 거주"
+  },
+  {
+    "id": 17,
+    "age": 38,
+    "sex": "남자",
+    "occupation": "회계 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 18,
+    "age": 32,
+    "sex": "남자",
+    "occupation": "기획 관리자",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "부모와 동거"
+  },
+  {
+    "id": 19,
+    "age": 45,
+    "sex": "여자",
+    "occupation": "그 외 마케팅 및 광고·홍보 관리자",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 20,
+    "age": 33,
+    "sex": "남자",
+    "occupation": "그 외 기획 및 마케팅 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "주택 이외의 거처",
+    "family": "부모와 동거"
+  },
+  {
+    "id": 21,
+    "age": 44,
+    "sex": "남자",
+    "occupation": "총무 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 22,
+    "age": 38,
+    "sex": "남자",
+    "occupation": "교육 분야 시간강사",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀·부모와 거주"
+  },
+  {
+    "id": 23,
+    "age": 31,
+    "sex": "남자",
+    "occupation": "전자제품 개발 기술자 및 연구원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 24,
+    "age": 42,
+    "sex": "남자",
+    "occupation": "발전설비 기술자 및 연구원",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 25,
+    "age": 48,
+    "sex": "남자",
+    "occupation": "시스템 소프트웨어 설계 및 분석가",
+    "category": "직장인",
+    "role": "general",
+    "housing": "주택 이외의 거처",
+    "family": "배우자·자녀·어머니와 거주"
+  },
+  {
+    "id": 26,
+    "age": 43,
+    "sex": "남자",
+    "occupation": "그 외 일반 영업원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 27,
+    "age": 42,
+    "sex": "남자",
+    "occupation": "광고 전문가",
+    "category": "직장인",
+    "role": "general",
+    "housing": "다세대주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 28,
+    "age": 44,
+    "sex": "남자",
+    "occupation": "전기 감리 기술자 및 연구원",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 29,
+    "age": 29,
+    "sex": "남자",
+    "occupation": "경리 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "부모와 동거"
+  },
+  {
+    "id": 30,
+    "age": 37,
+    "sex": "여자",
+    "occupation": "무직",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 31,
+    "age": 49,
+    "sex": "여자",
+    "occupation": "데이터 분석가",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자와 거주"
+  },
+  {
+    "id": 32,
+    "age": 36,
+    "sex": "남자",
+    "occupation": "냉난방기 관련 설비 조작원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 33,
+    "age": 44,
+    "sex": "남자",
+    "occupation": "마케팅 전문가",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 34,
+    "age": 30,
+    "sex": "여자",
+    "occupation": "무직",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 35,
+    "age": 36,
+    "sex": "남자",
+    "occupation": "영업 관리 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 36,
+    "age": 32,
+    "sex": "여자",
+    "occupation": "그 외 물품 이동 장비 조작원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 37,
+    "age": 45,
+    "sex": "여자",
+    "occupation": "무직",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 38,
+    "age": 47,
+    "sex": "남자",
+    "occupation": "경영 기획 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "자녀와 거주 (한부모)"
+  },
+  {
+    "id": 39,
+    "age": 30,
+    "sex": "여자",
+    "occupation": "소규모 상점 경영자",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 40,
+    "age": 45,
+    "sex": "남자",
+    "occupation": "배우",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀·어머니와 거주"
+  },
+  {
+    "id": 41,
+    "age": 44,
+    "sex": "여자",
+    "occupation": "사무 보조원",
+    "category": "아파트주민",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 42,
+    "age": 32,
+    "sex": "여자",
+    "occupation": "무직",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 43,
+    "age": 31,
+    "sex": "남자",
+    "occupation": "광고 전문가",
+    "category": "직장인",
+    "role": "general",
+    "housing": "단독주택",
+    "family": "비친족 동거"
+  },
+  {
+    "id": 44,
+    "age": 38,
+    "sex": "남자",
+    "occupation": "인사 및 노무 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "어머니와 동거"
+  },
+  {
+    "id": 45,
+    "age": 30,
+    "sex": "남자",
+    "occupation": "기업 고위 임원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자와 거주"
+  },
+  {
+    "id": 46,
+    "age": 45,
+    "sex": "남자",
+    "occupation": "기업 고위 임원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 47,
+    "age": 39,
+    "sex": "남자",
+    "occupation": "광고 및 홍보 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 48,
+    "age": 34,
+    "sex": "여자",
+    "occupation": "조세행정 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "주택 이외의 거처",
+    "family": "형제자매와 동거 (가구주)"
+  },
+  {
+    "id": 49,
+    "age": 31,
+    "sex": "남자",
+    "occupation": "전직 정보 통신 컨설턴트, 현재 구직중",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀·어머니와 거주"
+  },
+  {
+    "id": 50,
+    "age": 48,
+    "sex": "여자",
+    "occupation": "무직",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 51,
+    "age": 39,
+    "sex": "여자",
+    "occupation": "치과위생사",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 52,
+    "age": 41,
+    "sex": "여자",
+    "occupation": "공공행정 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "주택 이외의 거처",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 53,
+    "age": 32,
+    "sex": "남자",
+    "occupation": "게임 프로그래머",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 54,
+    "age": 37,
+    "sex": "남자",
+    "occupation": "전화 상담원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀·어머니와 거주"
+  },
+  {
+    "id": 55,
+    "age": 41,
+    "sex": "남자",
+    "occupation": "데이터 설계 및 프로그래머",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 56,
+    "age": 41,
+    "sex": "남자",
+    "occupation": "인사 및 노무 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "단독주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 57,
+    "age": 44,
+    "sex": "남자",
+    "occupation": "그 외 시각 디자이너",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 58,
+    "age": 28,
+    "sex": "여자",
+    "occupation": "회계 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 59,
+    "age": 40,
+    "sex": "여자",
+    "occupation": "무직",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 60,
+    "age": 37,
+    "sex": "여자",
+    "occupation": "무직",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자와 거주"
+  },
+  {
+    "id": 61,
+    "age": 46,
+    "sex": "여자",
+    "occupation": "그 외 중·고등학교 교사",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 62,
+    "age": 48,
+    "sex": "여자",
+    "occupation": "그 외 기능 관련 종사원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 63,
+    "age": 40,
+    "sex": "여자",
+    "occupation": "시스템 소프트웨어 프로그래머",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 64,
+    "age": 44,
+    "sex": "남자",
+    "occupation": "중식 조리사",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 65,
+    "age": 40,
+    "sex": "여자",
+    "occupation": "무직",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀·어머니와 거주"
+  },
+  {
+    "id": 66,
+    "age": 41,
+    "sex": "남자",
+    "occupation": "인사 및 노무 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 67,
+    "age": 41,
+    "sex": "여자",
+    "occupation": "스포츠 강사 및 트레이너",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 68,
+    "age": 39,
+    "sex": "남자",
+    "occupation": "경리 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "배우자와 거주"
+  },
+  {
+    "id": 69,
+    "age": 45,
+    "sex": "여자",
+    "occupation": "무직",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 70,
+    "age": 32,
+    "sex": "여자",
+    "occupation": "통계 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "배우자·자녀·부모와 거주"
+  },
+  {
+    "id": 71,
+    "age": 45,
+    "sex": "여자",
+    "occupation": "금형공학 기술자 및 연구원",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 72,
+    "age": 29,
+    "sex": "남자",
+    "occupation": "전직 철도운송 사무원, 현재 구직중",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "부모와 동거"
+  },
+  {
+    "id": 73,
+    "age": 33,
+    "sex": "여자",
+    "occupation": "회계 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 74,
+    "age": 40,
+    "sex": "남자",
+    "occupation": "전직 그 외 기획 및 마케팅 사무원, 현재 구직중",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 75,
+    "age": 45,
+    "sex": "남자",
+    "occupation": "교육 및 훈련 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 76,
+    "age": 31,
+    "sex": "남자",
+    "occupation": "경리 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 77,
+    "age": 32,
+    "sex": "여자",
+    "occupation": "국가행정 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 78,
+    "age": 32,
+    "sex": "여자",
+    "occupation": "광고 전문가",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 79,
+    "age": 38,
+    "sex": "여자",
+    "occupation": "영업 관리 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 80,
+    "age": 43,
+    "sex": "여자",
+    "occupation": "경리 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "혼자 거주"
+  },
+  {
+    "id": 81,
+    "age": 43,
+    "sex": "여자",
+    "occupation": "입학 사정관",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 82,
+    "age": 36,
+    "sex": "남자",
+    "occupation": "플랜트공학 기술자 및 연구원",
+    "category": "직장인",
+    "role": "general",
+    "housing": "주택 이외의 거처",
+    "family": "배우자와 거주"
+  },
+  {
+    "id": 83,
+    "age": 38,
+    "sex": "여자",
+    "occupation": "교육 및 훈련 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 84,
+    "age": 35,
+    "sex": "남자",
+    "occupation": "공연·영화 및 음반 기획자",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "다세대주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 85,
+    "age": 39,
+    "sex": "남자",
+    "occupation": "그 외 금융 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "부모와 동거"
+  },
+  {
+    "id": 86,
+    "age": 40,
+    "sex": "남자",
+    "occupation": "전화 상담원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 87,
+    "age": 27,
+    "sex": "여자",
+    "occupation": "교육 및 훈련 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "배우자와 거주"
+  },
+  {
+    "id": 88,
+    "age": 37,
+    "sex": "여자",
+    "occupation": "보육 관련 시설 서비스 종사원",
+    "category": "아파트주민",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 89,
+    "age": 36,
+    "sex": "남자",
+    "occupation": "자재 관리 사무원",
+    "category": "직장인",
+    "role": "office_worker",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 90,
+    "age": 38,
+    "sex": "남자",
+    "occupation": "시스템 소프트웨어 설계 및 분석가",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 91,
+    "age": 47,
+    "sex": "남자",
+    "occupation": "광고 전문가",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 92,
+    "age": 41,
+    "sex": "남자",
+    "occupation": "산업 특화 소프트웨어 프로그래머",
+    "category": "직장인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 93,
+    "age": 45,
+    "sex": "여자",
+    "occupation": "그 외 상점 판매원",
+    "category": "일반성인",
+    "role": "general",
+    "housing": "단독주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 94,
+    "age": 44,
+    "sex": "남자",
+    "occupation": "경영 컨설턴트",
+    "category": "일반성인",
+    "role": "general",
+    "housing": "다세대주택",
+    "family": "자녀와 거주 (배우자 별거)"
+  },
+  {
+    "id": 95,
+    "age": 21,
+    "sex": "남자",
+    "occupation": "소규모 상점 경영자",
+    "category": "일반성인",
+    "role": "general",
+    "housing": "주택 이외의 거처",
+    "family": "형제자매와 동거 (가구주)"
+  },
+  {
+    "id": 96,
+    "age": 41,
+    "sex": "여자",
+    "occupation": "승용차 및 승합차 운전원",
+    "category": "일반성인",
+    "role": "general",
+    "housing": "단독주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 97,
+    "age": 41,
+    "sex": "남자",
+    "occupation": "화학기계 설치 및 정비원",
+    "category": "일반성인",
+    "role": "general",
+    "housing": "다세대주택",
+    "family": "배우자·자녀와 거주"
+  },
+  {
+    "id": 98,
+    "age": 21,
+    "sex": "남자",
+    "occupation": "한식 조리사",
+    "category": "일반성인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "어머니와 동거"
+  },
+  {
+    "id": 99,
+    "age": 41,
+    "sex": "여자",
+    "occupation": "학습지 방문강사",
+    "category": "일반성인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "부모와 동거"
+  },
+  {
+    "id": 100,
+    "age": 29,
+    "sex": "여자",
+    "occupation": "소규모 상점 경영자",
+    "category": "일반성인",
+    "role": "resident",
+    "housing": "아파트",
+    "family": "혼자 거주"
+  }
+]

@@ -1,0 +1,52 @@
+# 가상환경
+.venv/
+venv/
+ENV/
+env/
+
+# 파이썬 캐시 및 임시 파일
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# 실제 매장 데이터 원본 및 민감 파일 (규칙 13)
+data/raw/
+real_store_data/
+*.secret
+*.env
+*.env.*
+*.pem
+*.key
+credentials.json
+api_key*.txt
+
+# 대용량 학습 가중치 및 실행 체크포인트 (단 results/logs와 results/screenshots는 보존)
+results/runs/
+*.pth
+*.pt
+*.zip
+
+# OS 임시 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE 설정
+.vscode/
+.idea/
+.gemini/
+
+# 추적 유지 명시: 가상 데이터 및 재생/로그 파일
+!results/logs/
+!results/screenshots/
+!public/data/
+!data/personas.csv
+!data/customer_traits.csv
+!data/external_factors.csv
